@@ -1,0 +1,47 @@
+.cards_dashboard {
+    text-align: center;
+    width: 97%;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    height: auto;
+    margin: 0% auto;    
+}
+
+.card_dashboard {
+    margin: 105px 10px;
+    height: 365px;
+    background-color: black;
+}
+
+.card_dashboard img {
+    width: 100%;
+    height: 100%;
+}
+
+.cards-status-os {
+    text-align: center;
+    width: 97%;
+    margin: auto;
+}
+
+.cards-status-os {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    height: auto;
+    margin: 0% auto;    
+}
+
+.cardg-2 {
+    margin: 70px 10px;
+    height: 425px;
+    background-color: black;
+}
+
+.cardg-2 img {
+    width: 100%;
+    height: 100%;
+}

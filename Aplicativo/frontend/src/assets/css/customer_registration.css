@@ -1,0 +1,166 @@
+:root {
+    --cor-primaria: #FFC000;
+    --cor-secundaria: #0942B4;
+}
+
+.customer_container_registration {
+    background-image: url('../img/fundo-login.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.customer_box_registration {
+    width: 70vw;
+    height: 75vh;
+
+    background-color: #FFF;
+
+    box-shadow: 0px 0px 999px black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.customer_logo_registration {
+    width: 25vw;
+}
+
+.customer_title_registration {
+    text-transform: uppercase;
+    font-size: 30px;
+
+    height: 1%;
+}
+
+.customer_form_registration {
+    height: 45%;
+    width: 80%;
+
+    margin-top: 20px;
+}
+
+.customer_inputs-form_registration {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.customer_inputs_top_registration {
+    width: 100%;
+    height: 60%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.customer_inputs_left_registration,
+.customer_inputs_right_registration {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+
+.customer_form_registration input {
+    margin: 0;
+
+    border: 3px solid #222;
+
+    height: 35px;
+    width: 25vw;
+
+    transition-duration: .5s;
+}
+
+.customer_input_email {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.customer_input_email input {
+    width: 95%;
+}
+
+.customer_input-terms_registration {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 35px;
+    width: 25vw;
+}
+
+.customer_form_registration input:hover,
+.customer_form_registration input:focus {
+    border-color: var(--cor-primaria);
+}
+
+.customer_buttons_register {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 78%;
+
+}
+
+.customer_buttons_register button {
+    width: 100%;
+}
+
+.customer_buttons_register button {
+    border: none;
+    border-radius: 8px;
+
+    padding: 7px;
+    margin: 10px;
+
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+
+    transition-duration: 0.5s;
+
+    cursor: pointer;
+}
+
+.customer_buttons_register .btn_regitration_costumer {
+    background-color: #ffcc00;
+    color: black;
+}
+
+.customer_buttons_register .btn_regitration_costumer:hover {
+    background-color: #fdd73c;
+    color: black;
+
+    transform: scale(1.09);
+}
+
+.customer_buttons_register .btn_cancelar_customer {
+    background-color: var(--cor-secundaria);
+    color: white;
+}
+
+.customer_buttons_register .btn_cancelar_customer:hover {
+    background-color: #215acc;
+    color: white;
+
+    transform: scale(1.09);
+}

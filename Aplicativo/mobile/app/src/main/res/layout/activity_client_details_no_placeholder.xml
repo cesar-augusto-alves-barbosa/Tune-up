@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClientDetailsNoPlaceholderActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+<<<<<<< HEAD
+            android:layout_height="match_parent">
+=======
+            android:layout_height="wrap_content">
+
+
+
+            <View
+                android:id="@+id/vw_band_black"
+                android:layout_width="125dp"
+                android:layout_height="182.14dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/band_layout"
+                android:backgroundTint="@color/black" />
+
+            <View
+                android:id="@+id/vw_band_blue"
+                android:layout_width="65dp"
+                android:layout_height="96.14dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/band_layout"
+                android:backgroundTint="@color/blue"
+                tools:ignore="MissingConstraints" />
+>>>>>>> edaec643b73b27cbbf83c63d789a54eea75ede73
+
+            <ImageView
+                android:id="@+id/iv_set"
+                android:layout_width="55dp"
+                android:layout_height="80dp"
+                android:layout_alignStart="@+id/rl_box_1"
+                android:src="@mipmap/set" />
+
+            <RelativeLayout
+                android:id="@+id/rl_box_1"
+                android:layout_width="345dp"
+                android:layout_height="320dp"
+                android:layout_below="@+id/iv_set"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border_box_blue">
+
+                <TextView
+                    android:id="@+id/tv_view_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/tl_data_client"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/iv_options_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_baseline_more_vert_24"
+                    android:layout_alignEnd="@+id/tv_view_title">
+                </ImageView>
+
+                <RelativeLayout
+                    android:id="@+id/rl_et_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_view_title">
+
+                    <TextView
+                        android:id="@+id/tv_view_txt_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="@string/tl_name_orderservice"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_view_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/tv_view_txt_name"
+                        android:background="@drawable/input_backgrond"
+                        android:text="@string/ph_name_customers_nadia"
+                        android:textColor="#000"
+                        android:textColorHint="#888"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_et_cpf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/rl_et_name"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_view_txt_cpf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="@string/tl_cpf"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_view_cpf"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/tv_view_txt_cpf"
+                        android:background="@drawable/input_backgrond"
+                        android:text="@string/ph_cpf_customers_nadia"
+                        android:textColor="#000"
+                        android:textColorHint="#888"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_et_dateBirth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/rl_et_cpf"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_view_txt_dateBirth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="@string/tl_date_birth"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_view_dateBirth"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/tv_view_txt_dateBirth"
+                        android:background="@drawable/input_backgrond"
+                        android:text="@string/ph_date_birth"
+                        android:textColor="#000"
+                        android:textColorHint="#888"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_et_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_et_dateBirth"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_view_txt_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="@string/tl_phone"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_view_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/tv_view_txt_phone"
+                        android:background="@drawable/input_backgrond"
+                        android:text="@string/txt_number_employee_manager"
+                        android:textColor="#000"
+                        android:textColorHint="#888"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_et_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/rl_et_phone"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_view_txt_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="@string/ph_email"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_view_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/tv_view_txt_email"
+                        android:background="@drawable/input_backgrond"
+                        android:text="@string/ph_email_customers_nadia"
+                        android:textColor="#000"
+                        android:textColorHint="#888"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_box_2"
+                android:layout_width="345dp"
+                android:layout_height="340dp"
+                android:layout_below="@+id/rl_box_1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/border_box_blue">
+
+                <RelativeLayout
+                    android:id="@+id/rl_et_board"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_view_txt_board"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="@string/tl_placa_menu"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_view_borad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_view_txt_board"
+
+                        android:text="@string/txt_plate_edk"
+                        android:textColor="#000"
+                        android:textColorHint="#888"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_et_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_et_board"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_view_txt_model"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="@string/tl_model_car"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_view_model"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_view_txt_model"
+                        android:text="Gol"
+                        android:textColor="#000"
+                        android:textColorHint="#888"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_et_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_et_model"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_view_txt_year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Ano:"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_view_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_view_txt_year"
+
+                        android:text="2001"
+                        android:textColor="#000"
+                        android:textColorHint="#888"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_et_brand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_et_year"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_view_txt_brand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Marca"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_view_brand"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_view_txt_brand"
+                        android:text="volkswagen"
+                        android:textColor="#000"
+                        android:textColorHint="#888"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_et_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_et_brand"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_view_txt_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Cor:"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_view_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_view_txt_color"
+                        android:text="Branco"
+                        android:textColor="#000"
+                        android:textColorHint="#888"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_et_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_et_color"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_view_txt_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Categoria:"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_view_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_view_txt_category"
+                        android:text="Hatchback"
+                        android:textColor="#000"
+                        android:textColorHint="#888"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

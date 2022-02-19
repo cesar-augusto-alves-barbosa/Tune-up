@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap%27');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+.geral_service {
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+ 
+}
+
+.background_service {
+    background: #EDEDE9;
+    border-radius: 10px;
+    padding: 29px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* height: 52%; */
+}
+
+.geral_container_service{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 100vw;
+}
+
+.service_request_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    min-width: 390px;
+}
+
+.service_request_container:nth-child(n+4) {
+    margin-top: 81px;
+}
+
+.title_service {
+    font-family: 'Staatliches';
+    text-transform: uppercase;
+    font-size: 32px;
+    height: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+}
+
+.title_container_service {
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 31px;
+    justify-content: center;
+}
+
+.service_container_request{
+    background-color: var(--cor-secundaria);
+    
+    width: 42vh;
+    height:37vh;
+    
+    padding: 20px;
+    border-radius: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    color: #FFF!important;
+}
+.title-service_container {
+    font-size: 22px;
+}
+/* MODELO */
+
+
+.model-service_container {
+    width: 50%;
+}
+.model_icon-service_container {
+    height: min-content;
+
+    display: flex;
+    justify-content: flex-start;
+}
+.icon_container-service_container {
+    width: 70%;
+    
+    display: flex;
+    justify-content: flex-end;
+}
+#icon_pencil_service_container {
+    color: #FFF!important;
+
+    transition-duration: .2s;
+}
+#icon_pencil_service_container:hover {
+    transform: scale(1.2);
+}
+
+.value_model-service_container::first-letter {
+    text-transform: uppercase;
+}
+
+/* PLACA // MARCA */
+.plate_brand-service_container {
+    height: min-content;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.section_status-service_container {
+    height: min-content;
+}
+
+.circle_status-service_container {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.value_status-service_container {
+    display: flex;
+    align-items: center;
+}
+.text_status-service_container {
+    width: 55%;
+}
+
+
+
+
+
+.details_car {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.details_plate {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    padding-left: 18px;
+    /* margin: 10px 0; */
+  }
+  
+
+.license_plate_request{
+    width: 50%;
+    font-size: 13px;
+}
+
+.model_car{
+    font-size: 14px;
+}
+
+.image_menu_request {
+    filter: invert(1);
+}
+
+.status {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ padding-left: 18px;
+ /* margin: 10px 0; */
+}
+
+.progress_status{
+    text-decoration: underline;
+    /* margin-top: 4%; */
+}
+
+.geral_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+}
+.text_btn-system {
+    color: #FFF!important;
+}
+
+.btn_service  {
+	padding: 1%;
+	cursor: pointer;
+	border: none;	
+	border-radius: 10px;
+    background-color: var(--cor-secundaria);
+    color:#FFF!important;
+    transition-duration: .2s;
+    width: 19%;
+    height: 10%;
+}
+
+.btn_service:hover {
+    background-color: #222;
+    color: var(--cor-primaria);
+    transform: scale(1.03);
+}
+
+.btn_service:active{
+    transform: scale(1.0001);
+}
+
+/* MODAL SERVICE REQUEST */
+
+
+.modal_service_container {
+    z-index: 1;
+    position: absolute;
+    width: 100vw;
+    height: min-content;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+}
+ 
+.modal_service{
+    box-shadow: 0px 0px 1000px black;
+    background: white;
+    width: 51%;
+    min-width: 300px;
+    padding: 3%;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: 30px 0 600px 0px;
+   
+}
+
+@keyframes modal_service {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.details_service_view {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 4%;
+}
+
+
+.details_service {
+    display: flex;
+    justify-content: space-evenly;    
+    width: 100%;
+    margin-bottom: 4%;
+}
+
+
+.subtitle_request {
+    font-family: 'Staatliches';
+    text-transform: uppercase;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service {
+    width: 30%;
+}
+
+.status_service select{
+    width: 76%;
+    padding: 5px;
+    border-radius: 8px;
+    text-indent: 0.01px;
+    text-overflow: "";
+    -moz-appearance:none; 
+    -webkit-appearance:none; 
+    appearance:none;
+    background: url("../img/seta-baixo.png") no-repeat center right rgb(224, 218, 218);
+    background-position: 90% center;
+}
+
+.status_service::after { 
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    z-index: 2001;
+}
+
+.line_service {
+    background-color: black;
+    width: 90%;
+    height: 2px;
+    margin: 0 auto; 
+}
+.title-order_of_service {
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.input-service-order_of_service{
+    font-weight: 405;
+    padding: 3px;
+
+    border-bottom: 3px solid black;
+}
+
+.inputs_services_add--order_of_service{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.input_services_add--order_of_service {
+    margin: 10px 0;
+}
+.select-order_of_service {
+    border: none;
+    border: 1px solid black;
+
+    padding: 3px;
+}
+
+.subtitle_service{
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.photos_cars {
+    background: var(--cor-primaria);
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-radius: 11px;
+    overflow-x: auto;
+
+}
+.photos_cars::-webkit-scrollbar {
+    width: 1vw;
+}
+  
+.photos_cars::-webkit-scrollbar-track {
+    background: rgb(199, 195, 195);
+    box-shadow: none;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.photos_cars::-webkit-scrollbar-thumb {
+    background: rgb(99, 91, 91);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.photos_cars::-webkit-scrollbar-thumb:hover {
+    background: #333;
+}
+  
+.photo_container_img {
+    height: 100px;
+    background-color: rgb(224, 218, 218);
+    opacity: 94%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 23px;
+    min-width: 30%;
+    box-shadow: 0px 0px 15px #333;
+}
+
+.btn_yellow_service {
+    padding: 2%;
+	cursor: pointer;
+	border: none;	
+	border-radius: 10px;
+    background-color: var(--cor-primaria);
+    transition-duration: .2s;
+    width: 27%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+    color: black;
+}
+
+.btn_yellow_service:hover {
+    background-color: #222;
+    color: var(--cor-primaria);
+    transform: scale(1.03);
+}
+
+.btn_yellow_service:active{
+    transform: scale(1.0001);
+}
+
+.btn_blue_service {
+    padding: 2%;
+	cursor: pointer;
+	border: none;	
+	border-radius: 10px;
+    background-color: var(--cor-secundaria);
+    transition-duration: .2s;
+    width: 27%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+}
+
+.btn_blue_service:hover {
+    background-color: #222;
+    color: var(--cor-secundaria);
+    transform: scale(1.03);
+}
+
+.btn_blue_service:active{
+    transform: scale(1.0001);
+}
+
+.service_btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4%;
+}
+
+.btn_black_service {
+    padding: 2%;
+	cursor: pointer;
+	border: none;	
+	border-radius: 10px;
+    background-color: #323232;
+    transition-duration: .2s;
+    width: 27%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+}
+
+.btn_black_service:hover {
+    background-color: rgb(231, 220, 220);
+    color: var(--cor-secundaria);
+    transform: scale(1.03);
+}
+
+.btn_black_service:active{
+    transform: scale(1.0001);
+}

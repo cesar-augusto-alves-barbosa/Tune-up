@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.OrderHistoryFragment"
+    android:background="#F6F6F6">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_screen_order_history"
+            android:layout_width="wrap_content"
+            android:layout_height="570dp"
+            android:layout_centerVertical="true">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_view_title_order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/rl_box_1"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Ordem de serviço 0001"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+
+                    <View
+                        android:id="@+id/vw_close_hitory_order"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/ic_baseline_close_24"
+                        android:layout_alignEnd="@+id/rl_box_1"
+                        android:layout_marginTop="24dp"
+                        android:onClick="closeOrder">
+                    </View>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_box_1"
+                        android:layout_width="338dp"
+                        android:layout_height="335dp"
+                        android:layout_below="@+id/tv_view_title_order"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/border_box_blue">
+
+                        <TextView
+                            android:id="@+id/tv_view_title"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="@string/tl_data_client"
+                            android:textColor="#000"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_menu_history_order"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/ic_baseline_more_vert_24" />
+
+                        <RelativeLayout
+                            android:id="@+id/rl_et_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_view_title">
+
+                            <TextView
+                                android:id="@+id/tv_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="@string/tl_name_orderservice"
+                                android:textColor="#000"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/tv_view_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_view"
+                                android:layout_marginTop="0dp"
+                                android:text="@string/ph_name_customers_nadia"
+                                android:textColor="#000"
+                                android:textColorHint="#888"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_et_cpf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rl_et_name"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:id="@+id/tv_view_cpf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="@string/tl_cpf"
+                                android:textColor="#000"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/tv_view_Cpf"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_view_cpf"
+                                android:text="@string/ph_cpf_customers_nadia"
+                                android:textColor="#000"
+                                android:textColorHint="#888"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_et_dateBirth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rl_et_cpf"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:id="@+id/tv_view_datebirth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="@string/tl_date_birth"
+                                android:textColor="#000"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/tv_view_dateBirth"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_view_datebirth"
+                                android:text="@string/ph_date_birth"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_et_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rl_et_dateBirth"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:id="@+id/tv_view_phone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="@string/tl_phone"
+                                android:textColor="#000"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/tv_view_telephone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_view_phone"
+                                android:text="@string/txt_number_employee_manager"
+                                android:textColor="#000"
+                                android:textColorHint="#888"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_et_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_below="@+id/rl_et_phone"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:id="@+id/tv_view_email"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="@string/ph_email"
+                                android:textColor="#000"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/tv_view_emails"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_view_email"
+                                android:text="@string/ph_email_customers_nadia"
+                                android:textColor="#000"
+                                android:textColorHint="#888"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_box_2"
+                        android:layout_width="345dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_box_1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/border_box_blue">
+
+                        <TextView
+                            android:id="@+id/tv_view_car_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Informações do Veículo"
+                            android:textColor="#000"
+                            android:textSize="20sp" />
+
+                        <RelativeLayout
+                            android:id="@+id/rl_et_board"
+                            android:layout_below="@id/tv_view_car_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:id="@+id/tv_view_board"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="@string/tl_placa_menu"
+                                android:textColor="#000"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/tv_view_Board"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_view_board"
+                                android:text="@string/txt_plate_edk"
+                                android:textColor="#000"
+                                android:textColorHint="#888"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_et_model"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rl_et_board"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:id="@+id/tv_view_model"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="@string/tl_model_car"
+                                android:textColor="#000"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/tv_view_Model"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_view_model"
+                                android:text="Gol"
+                                android:textColor="#000"
+                                android:textColorHint="#888"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_et_year"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rl_et_model"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:id="@+id/tv_view_year"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="Ano:"
+                                android:textColor="#000"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/tv_view_Year"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_view_year"
+                                android:text="2001"
+                                android:textColor="#000"
+                                android:textColorHint="#888"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_et_brand"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rl_et_year"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:id="@+id/tv_view_brand"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="Marca"
+                                android:textColor="#000"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/tv_view_Brand"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_view_brand"
+                                android:text="volkswagen"
+                                android:textColor="#000"
+                                android:textColorHint="#888"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_et_color"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rl_et_brand"
+                            android:layout_marginTop="10dp">
+
+
+                            <TextView
+                                android:id="@+id/tv_view_color"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="Cor:"
+                                android:textColor="#000"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/tv_view_Color"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_view_color"
+                                android:text="Branco"
+                                android:textColor="#000"
+                                android:textColorHint="#888"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_et_category"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rl_et_color"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:id="@+id/tv_view_category"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="Categoria:"
+                                android:textColor="#000"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/tv_view_Category"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_view_category"
+                                android:text="Hatchback"
+                                android:textColor="#000"
+                                android:textColorHint="#888"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_img_car"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rl_et_category"
+                            android:layout_marginTop="20dp">
+
+                            <TextView
+                                android:id="@+id/tv_img_car"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="Imagens do veículo:"
+                                android:textColor="#000"
+                                android:textSize="15sp"
+                                android:layout_marginBottom="20dp"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rl_img_car">
+
+                            <View
+                                android:id="@+id/vw_one_picture"
+                                android:layout_width="130dp"
+                                android:layout_height="84dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginBottom="20dp"
+                                android:background="@color/blue" />
+
+                            <View
+                                android:id="@+id/vw_second_picture"
+                                android:layout_width="130dp"
+                                android:layout_height="84dp"
+                                android:layout_alignParentEnd="true"
+                                android:background="@color/black" />
+
+                            <View
+                                android:id="@+id/vw_tree_picture"
+                                android:layout_width="130dp"
+                                android:layout_height="84dp"
+                                android:layout_below="@id/vw_one_picture"
+                                android:layout_alignParentEnd="true"
+                                android:background="@color/blue" />
+
+                            <View
+                                android:id="@+id/vw_four_picture"
+                                android:layout_width="130dp"
+                                android:layout_height="84dp"
+                                android:layout_below="@id/vw_one_picture"
+                                android:layout_alignParentStart="true"
+                                android:background="@color/black" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_box_3"
+                        android:layout_width="345dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_box_2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/border_box_blue">
+
+                        <TextView
+                            android:id="@+id/tv_view_services"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Serviços"
+                            android:textColor="#000"
+                            android:textColorHint="#888"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/tv_view_type_services"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_below="@+id/tv_view_services"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="SERVIÇOS AQUI"
+                            android:textColor="#000"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_box_4"
+                        android:layout_width="345dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_box_3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/border_box_blue">
+
+                        <TextView
+                            android:id="@+id/tv_view_services_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Informações da ordem de serviços"
+                            android:textColor="#000"
+                            android:textColorHint="#888"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_view_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_below="@+id/tv_view_services_info"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Preço:"
+                            android:textColor="#000"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_view_price_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_below="@+id/tv_view_price"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="R$70,00"
+                            android:textColor="#000"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_view_dt_issue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_below="@+id/tv_view_price_total"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Data de emissão:"
+                            android:textColor="#000"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_view_dt_issue_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_below="@+id/tv_view_dt_issue"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="19/03/2021"
+                            android:textColor="#000"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_view_dt_issued"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_below="@+id/tv_view_dt_issue_value"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Data de emissão:"
+                            android:textColor="#000"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_view_dt_issued_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_below="@+id/tv_view_dt_issued"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="21/03/2021"
+                            android:textColor="#000"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_view_concluded"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_below="@+id/tv_view_dt_issued_value"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Data de conclusão"
+                            android:textColor="#000"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_view_concluded_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_below="@+id/tv_view_concluded"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="21/03/2021"
+                            android:textColor="#000"
+                            android:textSize="15sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="320dp"
+                        android:layout_height="80dp"
+                        android:layout_below="@+id/rl_box_4"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+
+                        <Button
+                            android:id="@+id/bt_back_client"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:backgroundTint="@color/black"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Cancelar"
+                            android:textColor="@color/white" />
+
+                        <Button
+                            android:id="@+id/bt_next_client"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:backgroundTint="@color/blue"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Salvar Edição"
+                            android:textColor="@color/white"
+                            android:textSize="13dp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PackagePremiumActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+            <View
+                android:id="@+id/vw_band_black"
+                android:layout_width="125dp"
+                android:layout_height="182dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/band_layout"
+                android:backgroundTint="@color/gray_200" />
+
+            <View
+                android:id="@+id/vw_band_blue"
+                android:layout_width="65dp"
+                android:layout_height="96.14dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/band_layout"
+                android:backgroundTint="@color/yellow_100" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/main_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_200"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:menu="@menu/packge_menu">
+
+                <ImageView
+                    android:id="@+id/img_logo_toolbar"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="start"
+                    android:src="@drawable/icon_ems_white">
+
+                </ImageView>
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <RelativeLayout
+                android:id="@+id/rl_container_package"
+                android:layout_width="match_parent"
+                android:layout_height="112dp"
+                android:layout_below="@+id/main_toolbar"
+                android:background="@drawable/gradient_background_package_yellow">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_diamond"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="0dp"
+                        android:src="@mipmap/diamond32x" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="26dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Premium"
+                        android:textColor="#FFFF"
+                        android:textSize="35sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginEnd="15dp"
+                    android:src="@mipmap/arrow_left" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_container_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_container_package">
+
+                <TextView
+                    android:id="@+id/tv_description_packages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:width="350dp"
+                    android:background="@drawable/input_underline"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Nosso pacote Pro é um mais robusto, entregando melhor controle dos seus negocios e disponibilizado por 2 anos."
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="22sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_container_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_container_text"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="50dp"
+                        android:src="@mipmap/clock2x" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="15dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="2 Anos de uso"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="50dp"
+                        android:src="@mipmap/name" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="15dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Ilimitado"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="50dp"
+                        android:src="@mipmap/users" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="15dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Ilimitado"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="50dp"
+                        android:src="@mipmap/help" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="15dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="HelpDesk 24H"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="50dp"
+                        android:src="@mipmap/create_order" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="15dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Ilimitado"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v_underline"
+                android:layout_width="330dp"
+                android:layout_height="3dp"
+                android:layout_below="@id/ll_container_description"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="19dp"
+                android:background="@drawable/input_underline"
+                android:backgroundTint="@color/black" />
+
+            <RelativeLayout
+                android:id="@+id/rl_container_package_buy"
+                android:layout_width="match_parent"
+                android:layout_height="112dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/v_underline"
+                android:background="@drawable/gradient_background_package_yellow">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_diamond2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@mipmap/diamond32x" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="25sp"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Premium"
+                        android:textColor="#FFFF"
+                        android:textSize="35sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_description_text_buy"
+                android:layout_below="@+id/rl_container_package_buy"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="PACOTE EMS PREMIUM"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:width="250sp"
+                    android:background="@drawable/input_underline">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_marginTop="5sp"
+                    android:text="R$1000,00 á vista"
+                    android:textColor="#000"
+                    android:textSize="19sp"
+                    android:width="350dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="ou até 12x no cartão de crédito"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:width="350dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_below="@id/ll_description_text_buy"
+                android:layout_height="51dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="19dp"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:text="Realizar compra"
+                android:textColor="#000"
+                android:fontFamily="@font/poppins_regular"
+                android:backgroundTint="#3EFF1F">
+
+            </Button>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

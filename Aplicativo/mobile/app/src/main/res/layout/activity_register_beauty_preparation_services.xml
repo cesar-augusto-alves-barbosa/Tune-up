@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#F6F6F6"
+    tools:context=".RegisterBeautyPreparationServicesActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_screen_register_beautyPreparation_service"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    <View
+        android:id="@+id/vw_band_black"
+        android:layout_width="125dp"
+        android:layout_height="182.14dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/band_layout"
+        android:backgroundTint="@color/black" />
+
+    <View
+        android:id="@+id/vw_band_blue"
+        android:layout_width="65dp"
+        android:layout_height="96.14dp"
+        android:background="@drawable/band_layout"
+        android:backgroundTint="@color/blue"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/img_icon_ems"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:src="@drawable/icon_ems_black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/tv_title_register_beautyPreparation_services"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Serviço de Estética e Preparação"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/img_icon_ems"
+        android:layout_marginTop="20dp" />
+
+        <LinearLayout
+            android:id="@+id/box_register_beautyPreparation_services"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_below="@+id/tv_title_register_beautyPreparation_services"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border_box"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="180dp"
+                    android:layout_height="260dp"
+                    android:layout_alignParentStart="true">
+
+                    <CheckBox
+                        android:id="@+id/cb_beautyPreparation_body_shop"
+
+                        android:layout_width="180dp"
+                        android:layout_height="30dp"
+
+                        android:text="Funilária"
+                        android:textSize="15dp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_beautyPreparation_plot"
+                        android:layout_below="@id/cb_beautyPreparation_body_shop"
+
+                        android:layout_width="180dp"
+                        android:layout_height="30dp"
+
+                        android:text="Plotagem"
+                        android:textSize="15dp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_beautyPreparation_tapestry"
+                        android:layout_below="@id/cb_beautyPreparation_plot"
+
+                        android:layout_width="180dp"
+                        android:layout_height="30dp"
+
+                        android:text="Tapeçaria"
+                        android:textSize="15dp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_beautyPreparation_fluid_cleaning"
+                        android:layout_below="@id/cb_beautyPreparation_tapestry"
+
+                        android:layout_width="180dp"
+                        android:layout_height="30dp"
+
+                        android:text="Limpeza de Fluidos"
+                        android:textSize="15dp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_beautyPreparation_washing_polishing"
+                        android:layout_below="@id/cb_beautyPreparation_fluid_cleaning"
+
+                        android:layout_width="180dp"
+                        android:layout_height="30dp"
+
+                        android:text="Lavagem e Polimento"
+                        android:textSize="15dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="260dp"
+                    android:layout_alignParentEnd="true">
+
+                    <CheckBox
+                        android:id="@+id/cb_beautyPreparation_turbo"
+
+                        android:layout_width="180dp"
+                        android:layout_height="30dp"
+
+                        android:text="Turbo"
+                        android:textSize="15dp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_beautyPreparation_power_remap"
+                        android:layout_below="@id/cb_beautyPreparation_turbo"
+
+                        android:layout_width="180dp"
+                        android:layout_height="37dp"
+
+                        android:text="Remap de Potência"
+                        android:textSize="15dp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_beautyPreparation_suspension"
+                        android:layout_below="@id/cb_beautyPreparation_power_remap"
+
+                        android:layout_width="180dp"
+                        android:layout_height="30dp"
+
+                        android:text="Suspensão"
+                        android:textSize="15dp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_beautyPreparation_engine_preparation"
+                        android:layout_below="@id/cb_beautyPreparation_suspension"
+
+                        android:layout_width="180dp"
+                        android:layout_height="30dp"
+
+                        android:text="Preparação de Motores"
+                        android:textSize="15dp" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true">
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginHorizontal="3dp"
+                        android:background="@drawable/circle_activity_register_screens"
+                        android:backgroundTint="@color/black" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginHorizontal="3dp"
+                        android:background="@drawable/circle_activity_register_screens"
+                        android:backgroundTint="@color/black" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginHorizontal="3dp"
+                        android:background="@drawable/circle_activity_register_screens"
+                        android:backgroundTint="@color/black" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginHorizontal="3dp"
+                        android:background="@drawable/circle_activity_register_screens"
+                        android:backgroundTint="@color/black" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginHorizontal="3dp"
+                        android:background="@drawable/circle_activity_register_screens"
+                        android:backgroundTint="@color/blue" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginHorizontal="3dp"
+                        android:background="@drawable/circle_activity_register_screens"
+                        android:backgroundTint="@color/black" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginHorizontal="3dp"
+                        android:background="@drawable/circle_activity_register_screens"
+                        android:backgroundTint="@color/black" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginHorizontal="3dp"
+                        android:background="@drawable/circle_activity_register_screens"
+                        android:backgroundTint="@color/black" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginHorizontal="3dp"
+                        android:background="@drawable/circle_activity_register_screens"
+                        android:backgroundTint="@color/black" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/box_register_beautyPreparation_services">
+
+            <Button
+                android:id="@+id/bt_back_register_info_beautyPreparation"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="@font/poppins_medium"
+                android:backgroundTint="@color/black"
+                android:text="@string/txt_back_button"
+                android:onClick="redirectToRegisterEngineService"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"/>
+
+            <Button
+                android:id="@+id/bt_next_register_info_beautyPreparation"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="@color/blue"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/txt_next_button"
+                android:onClick="redirectToRegisterEletricalEletronicsService"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

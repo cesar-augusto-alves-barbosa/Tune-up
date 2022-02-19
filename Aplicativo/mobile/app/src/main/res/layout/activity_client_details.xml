@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClientDetailsActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_set"
+                    android:layout_width="55dp"
+                    android:layout_height="80dp"
+                    android:layout_alignStart="@+id/rl_box_1"
+                    android:src="@mipmap/set" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_box_1"
+                    android:layout_width="345dp"
+                    android:layout_height="330dp"
+                    android:layout_below="@+id/iv_set"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/border_box_blue">
+
+                    <TextView
+                        android:id="@+id/tv_view_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="@string/tl_data_client"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_et_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_view_title">
+
+                        <TextView
+                            android:id="@+id/tv_view_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="@string/tl_name_orderservice"
+                            android:textColor="#000"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/et_view_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_below="@+id/tv_view_name"
+                            android:background="@drawable/input_backgrond"
+                            android:hint="@string/ph_name_customers_nadia"
+                            android:textColor="#000"
+                            android:textColorHint="#888"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_et_cpf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_below="@+id/rl_et_name"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_view_cpf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="@string/tl_cpf"
+                            android:textColor="#000"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/et_view_cpf"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_below="@+id/tv_view_cpf"
+                            android:background="@drawable/input_backgrond"
+                            android:hint="@string/ph_cpf_customers_nadia"
+                            android:textColor="#000"
+                            android:textColorHint="#888"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_et_dateBirth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_below="@+id/rl_et_cpf"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_view_dateBirth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="@string/tl_date_birth"
+                            android:textColor="#000"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/et_view_dateBirth"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_below="@+id/tv_view_dateBirth"
+                            android:background="@drawable/input_backgrond"
+                            android:hint="@string/ph_date_birth"
+                            android:textColor="#000"
+                            android:textColorHint="#888"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_et_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_et_dateBirth"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_view_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="@string/tl_phone"
+                            android:textColor="#000"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/et_view_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_below="@+id/tv_view_phone"
+                            android:background="@drawable/input_backgrond"
+                            android:hint="@string/txt_number_employee_manager"
+                            android:textColor="#000"
+                            android:textColorHint="#888"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_et_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_et_phone"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_view_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="@string/ph_email"
+                            android:textColor="#000"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/et_view_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_below="@+id/tv_view_email"
+                            android:background="@drawable/input_backgrond"
+                            android:hint="@string/ph_email_customers_nadia"
+                            android:textColor="#000"
+                            android:textColorHint="#888"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_box_2"
+                    android:layout_width="345dp"
+                    android:layout_height="390dp"
+                    android:layout_below="@+id/rl_box_1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border_box_blue">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_et_board"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_view_board"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="@string/tl_placa_menu"
+                            android:textColor="#000"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/et_view_board"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_view_board"
+                            android:background="@drawable/input_backgrond"
+                            android:hint="@string/txt_plate_edk"
+                            android:textColor="#000"
+                            android:textColorHint="#888"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_et_model"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_et_board"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_view_model"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="@string/tl_model_car"
+                            android:textColor="#000"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/et_view_model"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_view_model"
+                            android:background="@drawable/input_backgrond"
+                            android:hint="Gol"
+                            android:textColor="#000"
+                            android:textColorHint="#888"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_et_year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_et_model"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_view_year"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Ano:"
+                            android:textColor="#000"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/et_view_year"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_view_year"
+                            android:background="@drawable/input_backgrond"
+                            android:hint="2001"
+                            android:textColor="#000"
+                            android:textColorHint="#888"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_et_brand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_et_year"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_view_brand"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Marca"
+                            android:textColor="#000"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/et_view_brand"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_view_brand"
+                            android:background="@drawable/input_backgrond"
+                            android:hint="volkswagen"
+                            android:textColor="#000"
+                            android:textColorHint="#888"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_et_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_et_brand"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_view_color"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Cor:"
+                            android:textColor="#000"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/et_view_color"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_view_color"
+                            android:background="@drawable/input_backgrond"
+                            android:hint="Branco"
+                            android:textColor="#000"
+                            android:textColorHint="#888"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_et_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_et_color"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_view_category"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Categoria:"
+                            android:textColor="#000"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/et_view_category"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_view_category"
+                            android:background="@drawable/input_backgrond"
+                            android:hint="Hatchback"
+                            android:textColor="#000"
+                            android:textColorHint="#888"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="320dp"
+                    android:layout_height="80dp"
+                    android:layout_below="@+id/rl_box_2"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10dp">
+
+                    <Button
+                        android:id="@+id/bt_back_register_info_company"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:backgroundTint="@color/black"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Cancelar"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/bt_next_register_info_company"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:backgroundTint="@color/blue"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Salvar Edição"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+:root {
+    --cor-primaria: #FFC000;
+    --cor-secundaria: #0942B4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-banner img.imgfundo-employee {
+    width: 100vw;
+    height: 100vh;
+
+    object-fit: cover;
+
+    position: absolute;
+
+    z-index: -1;
+}
+
+.container-employee {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+#owner-register-container {
+    background-color: #FFF;
+
+    width: 54%;
+
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 5vh; */
+
+    padding: 10px 30px;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.img-back img.lgo-employee {
+    width: 40%;
+}
+
+.img-back h1 {
+    text-transform: uppercase;
+
+    margin-top: 8px;
+
+    font-family: Staatliches;
+    font-size: 40px;
+}
+
+#owner-register-container form {
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#owner-register-container select,
+.input-owner-register-container {
+    border: 2px solid #323232;
+    border-radius: 11px;
+
+    padding: 10px;
+    margin-bottom: 20px;
+
+    font-size: 1rem;
+}
+
+.group-employee {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.group-employee label {
+    text-align: left;
+
+    margin-bottom: 5px;
+    font-weight: bolder;
+}
+
+#owner-register-container .buttons button {
+    border: none;
+    border-radius: 8px;
+
+    padding: 7px;
+    margin: 10px;
+
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+
+    transition-duration: 0.5s;
+
+    cursor: pointer;
+}
+
+.buttons #nextPage {
+    background-color: #ffcc00;
+    color: black;
+}
+
+.buttons #nextPage:hover {
+    background-color: #fdd73c;
+    color: black;
+
+    transform: scale(1.09);
+}
+
+.buttons #cancelPage {
+    background-color: var(--cor-secundaria);
+    color: white;
+}
+
+.buttons #cancelPage:hover {
+    background-color: #215acc;
+    color: white;
+
+    transform: scale(1.09);
+}

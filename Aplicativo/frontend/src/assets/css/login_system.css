@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --cor-primaria: #FFC000;
+    --cor-secundaria: #0942B4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+
+    font-family: "Poppins", sans-serif;
+}
+
+#body-login {
+    height: 100vh;
+
+    background-image: url("../img/fundo-login.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* filter: contrast(10%); */
+}
+
+#login-container .img-back {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-back img {
+    width: 80%;
+}
+
+#login-container {
+    background-color: #FFF;
+
+    width: 500px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 20px 30px;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+#login-container form {
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+#login-container label {
+    font-weight: bold;
+    font-size: .8rem;
+
+    margin-bottom: 7px;
+
+    text-align: left;
+}
+
+.group-login-system {
+    display: flex;
+    flex-direction: column;
+}
+.input-login_system_owner,
+.input-login_system_user,
+.geral_input {
+    padding: 10px;
+    margin-bottom: 10px;
+
+    background-color: #FFF!important;
+
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+
+
+#forgot-pass {
+    text-align: left;
+    display: block;
+}
+
+.buttons-login-system button{
+    text-align: center;
+    text-transform: uppercase;
+
+    border: none;
+    border-radius: 10px;
+
+    height: 40px;
+    width: 47%;
+
+    cursor: pointer;
+}
+
+.register-button-login {
+    background-color: var(--cor-primaria);
+    color: black;
+}
+
+.cancel-button-login {
+    background-color: var(--cor-secundaria);
+    color: rgb(255, 255, 255);
+}
+
+.buttons-login-system {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-back-login {
+    display: block;
+    position: relative;
+    height: 40px;
+}
+
+.back-login {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #323232;
+    padding: 6px 12px 6px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white!important;
+} 
+
+.back-login:hover {
+    color: var(--cor-primaria);
+}

@@ -1,0 +1,14 @@
+01cliente-veiculo202106-03-2021 18:39:1501
+02 1isabela silva                 02-11-2001isasilva011@gmail.com 119494443042301Isa             43045829402
+02 2Jonatan souza                 09-16-2000jonsouz2301@gmail.com 119894299762205Jow             48066754365
+02 3Gabriel silva                 02-04-2001gabrielreis@gmail.com 1193346632222528rei            40904246833
+03 4lamborghini         urus           amarelo   BRA2E19SUV       2018 1
+03 5fiat                uno            prata     BRA5U20hatchback 2019 2
+03 6bmw                 x1             branca    BRA7E80sedan     2019 3
+040000000006
+
+
+
+
+
+

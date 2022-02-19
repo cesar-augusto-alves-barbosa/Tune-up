@@ -1,0 +1,53 @@
+.bar_navigation-search {
+    width: 100%;
+    height: 15vh;
+
+    background-color: var(--cor-primaria);
+
+    padding: 0px 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar_navigation-simple {
+    height: 40%;
+    padding: 5px 30px 5px 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.topbar_navigation-simple i {
+    font-size: 40px;
+}
+
+.logo_navigation-search {
+    height: 10vh;
+}
+
+.content_right-navigation-search {
+    width: 20%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn_login-navigation-search {
+    color: black;
+    transition-duration: .5s;
+}
+
+.icone-navigation-search {
+    transform: scale(2);
+}
+
+.btn_login-navigation-search:hover {
+    transform: scale(1.09);
+    color: var(--cor-secundaria);
+    font-weight: 700;
+}

@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap%27');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+.geral {
+    width: 100vw;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+
+.background {
+    background: #EDEDE9;
+    border-radius: 10px;
+}
+
+.geral_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    padding: 30px;
+}
+
+.customer_container_view{
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.fields_customer_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container_name_icon-customer_view_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-customer_view_container {
+    font-size: 20px;
+}
+
+.name-customer_view_container,
+.title_plate-customer_view_container,
+.icon-customer_view_container {
+    color: white!important;
+}
+.title_client {
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    font-size: 32px;
+    height: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+}
+
+.geral_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+}
+
+.client_btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4%;
+}
+
+
+.btn_customer {
+	padding: 1%;
+	cursor: pointer;
+	border: none;	
+	border-radius: 10px;
+    background-color: var(--cor-secundaria);
+    transition-duration: .2s;
+    width: 19%;
+    height: 10%;
+}
+
+.btn_customer:hover {
+    background-color: #222;
+    color: var(--cor-primaria);
+    transform: scale(1.03);
+}
+
+.btn_customer:active{
+    transform: scale(1.0001);
+}
+
+
+/* ESTILIZAÇÃO DO MODAL CUSTOMER */
+
+.modal_container_customer {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_customer{
+    background: white;
+    width: 50%;
+    min-width: 300px;
+    padding: 3% 0;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+@keyframes modal_customer {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.show_customer .modal_customer{
+    animation: modal .3s; 
+} 
+
+.subtitle {
+    font-family: 'Staatliches';
+    text-transform: uppercase;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details_customer_view{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    margin-top: 4%;
+}
+
+.details_customer_view h3{
+    font-weight: 550;
+    text-decoration: underline;
+    margin: 3px;
+}
+
+.details_customer_view p{
+    padding-bottom: 5%;
+}
+
+.details_view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 100%;
+    margin-bottom: 4%;
+}
+
+.client {
+    width: 50%;
+    min-width: 230px;
+    text-align: center;
+}
+
+.input-music {
+    text-align: center;
+    width: 70%;
+    min-width: 230px;
+   font-weight: 405;
+}
+
+
+.btn_blue_customer {
+    padding: 2%;
+	cursor: pointer;
+	border: none;	
+	border-radius: 10px;
+    background-color: var(--cor-primaria);
+    transition-duration: .2s;
+    width: 27%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+    color: black;
+}
+
+.btn_blue_customer:hover {
+    background-color: #222;
+    color: var(--cor-primaria);
+    transform: scale(1.03);
+}
+
+.btn_blue_customer:active{
+    transform: scale(1.0001);
+}
+
+.btn_black_customer {
+    padding: 2%;
+	cursor: pointer;
+	border: none;	
+	border-radius: 10px;
+    background-color: #323232;
+    transition-duration: .2s;
+    width: 27%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+}
+
+.btn_black_customer:hover {
+    background-color: rgb(231, 220, 220);
+    color: var(--cor-secundaria);
+    transform: scale(1.03);
+}
+
+.btn_black_customer:active{
+    transform: scale(1.0001);
+}

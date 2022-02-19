@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SucessPaymentPackagesActivity"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+         <ImageView
+             android:layout_width="250dp"
+             android:layout_height="200dp"
+             android:src="@drawable/icon_ems_white"
+             android:layout_marginLeft="65dp">
+
+         </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="260dp">
+
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@mipmap/ok"
+             android:layout_gravity="center">
+
+         </ImageView>
+
+            <TextView
+                android:id="@+id/tv_description_packages_registration_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20sp"
+                android:width="350dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Compra de pacote realizada com sucesso!"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textSize="30sp"></TextView>
+
+            <TextView
+                android:id="@+id/tv_description_packages_registration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20sp"
+                android:width="350dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Vamos direciona-lo para continuar o cadastro"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textSize="30sp"></TextView>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

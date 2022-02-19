@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.VisualizationOrderFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_screen_register_new_order"
+            android:layout_width="wrap_content"
+            android:layout_height="570dp"
+            android:layout_centerVertical="true">
+
+            <View
+                android:id="@+id/vw_band_black"
+                android:layout_width="125dp"
+                android:layout_height="182.14dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/band_layout"
+                android:backgroundTint="@color/black" />
+
+            <View
+                android:id="@+id/vw_band_blue"
+                android:layout_width="65dp"
+                android:layout_height="96.14dp"
+                android:background="@drawable/band_layout"
+                android:backgroundTint="@color/blue"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                tools:ignore="MissingConstraints" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/rl_view_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+
+                    android:padding="8dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_box_top_functions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="20dp"
+
+                            android:src="@mipmap/arrow_left" />
+
+                        <TextView
+                            android:id="@+id/tv_order_text_0001"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Ordem 001"
+                            android:textColor="@color/black"
+
+                            android:textSize="25dp" />
+
+                        <ImageView
+                            android:id="@+id/iv_menu_view_view_order"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+
+                            android:src="@drawable/ic_baseline_more_vert_24" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_box_view_client"
+                        android:layout_below="@+id/rl_box_top_functions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/border_box_blue">
+
+                        <TextView
+                            android:id="@+id/tv_view_info_client"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="INFORMAÇÕES DOS CLIENTES"
+                            android:textColor="@color/black"
+
+                            android:textSize="17dp" />
+
+                        <TextView
+                            android:id="@+id/tv_view_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_view_info_client"
+                            android:layout_marginTop="15dp"
+
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Nome:"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/et_write_name"
+                            android:layout_width="356dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_view_name"
+
+                            android:text="@string/ph_name_customers_nadia"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/tv_view_cpf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/et_write_name"
+                            android:layout_marginTop="15dp"
+
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="CPF:"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/et_write_cpf"
+                            android:layout_width="356dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_view_cpf"
+
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="@string/ph_cpf_customers_nadia"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_view_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/et_write_cpf"
+                            android:layout_marginTop="15dp"
+
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Telefone/Celular:"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/et_write_phone"
+                            android:layout_width="356dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_view_phone"
+
+                            android:text="11 968745788"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_box_view_service"
+                        android:layout_below="@+id/rl_box_view_client"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/border_box_blue">
+
+                        <TextView
+                            android:id="@+id/tv_view_info_service"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="INFORMAÇÕES DO SERVIÇO"
+                            android:textColor="@color/black"
+
+                            android:textSize="17dp" />
+
+                        <TextView
+                            android:id="@+id/tv_view_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_view_info_service"
+                            android:layout_marginTop="15dp"
+
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Preço do Serviço:"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/et_write_price"
+                            android:layout_width="356dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_view_price"
+
+                            android:text="R$ 3.589,00"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_view_service"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/et_write_price"
+                            android:layout_marginTop="15dp"
+
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Serviços:"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/et_write_service"
+                            android:layout_width="356dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_view_service"
+
+                            android:fontFamily="@font/poppins_medium"
+
+                            android:text="Troca de Pastilha de Freio\nAlarme\nTravas"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_view_issue_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/et_write_service"
+                            android:layout_marginTop="15dp"
+
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Data de Emissão:"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/et_write_issue_date"
+                            android:layout_width="356dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_view_issue_date"
+
+                            android:fontFamily="@font/poppins_medium"
+
+                            android:text="28/11/2021"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_view_estimated_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/et_write_issue_date"
+                            android:layout_marginTop="15dp"
+
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Data Estimada:"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/et_write_estimated_date"
+                            android:layout_width="356dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_view_estimated_date"
+
+                            android:text="10/12/2021"
+
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_box_view_car"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/rl_box_view_service"
+
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/border_box_blue">
+
+                        <TextView
+                            android:id="@+id/tv_view_info_car"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="INFORMAÇÕES DO VEÍCULO"
+                            android:textColor="@color/black"
+
+                            android:textSize="17dp" />
+
+                        <TextView
+                            android:id="@+id/tv_view_brand"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_view_info_car"
+                            android:layout_marginTop="15dp"
+
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Marca:"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/et_write_brand"
+                            android:layout_width="356dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_view_brand"
+
+                            android:text="Dodge"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_view_model"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/et_write_brand"
+                            android:layout_marginTop="15dp"
+
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Modelo:"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/et_write_model"
+                            android:layout_width="356dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_view_model"
+
+                            android:text="Charger R/T 69"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_view_category"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/et_write_model"
+                            android:layout_marginTop="15dp"
+
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Categoria:"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/et_write_category"
+                            android:layout_width="356dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_view_category"
+
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Muscle Car"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_view_color"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/et_write_category"
+                            android:layout_marginTop="15dp"
+
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Cor:"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/et_write_color"
+                            android:layout_width="356dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_view_color"
+
+                            android:text="Preto Perolado"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_view_board"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/et_write_color"
+                            android:layout_marginTop="15dp"
+
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Placa:"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/et_write_board"
+                            android:layout_width="356dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_view_board"
+
+                            android:text="REI-6987"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_box_view_photos_car"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_box_view_car"
+                        android:layout_marginTop="15dp"
+
+                        android:layout_marginBottom="30dp"
+                        android:background="@drawable/border_box_blue">
+
+                        <TextView
+                            android:id="@+id/tv_view_info_photos_car"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="IMAGENS DO VEÍCULO"
+                            android:textColor="@color/black"
+
+                            android:textSize="17dp" />
+
+                        <ImageView
+                            android:id="@+id/iv_photo_1"
+                            android:layout_width="140dp"
+                            android:layout_height="120dp"
+                            android:layout_below="@+id/tv_view_info_photos_car"
+                            android:layout_alignStart="@+id/tv_view_info_photos_car"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/border_box"
+
+                            android:onClick="addingImage1" />
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignStart="@+id/iv_photo_1"
+                            android:layout_alignTop="@+id/iv_photo_1"
+                            android:layout_alignEnd="@+id/iv_photo_1"
+                            android:layout_alignBottom="@+id/iv_photo_1"
+                            android:background="@drawable/ic_baseline_photo_camera_24" />
+
+                        <ImageView
+                            android:id="@+id/iv_photo_2"
+                            android:layout_width="140dp"
+                            android:layout_height="120dp"
+                            android:layout_below="@+id/tv_view_info_photos_car"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/border_box"
+
+                            android:onClick="addingImage2" />
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignStart="@+id/iv_photo_2"
+                            android:layout_alignTop="@+id/iv_photo_2"
+                            android:layout_alignEnd="@+id/iv_photo_2"
+                            android:layout_alignBottom="@+id/iv_photo_2"
+                            android:background="@drawable/ic_baseline_photo_camera_24" />
+
+                        <ImageView
+                            android:id="@+id/iv_photo_3"
+                            android:layout_width="140dp"
+                            android:layout_height="120dp"
+                            android:layout_below="@+id/iv_photo_1"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/border_box"
+
+                            android:onClick="addingImage3" />
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignStart="@+id/iv_photo_3"
+                            android:layout_alignTop="@+id/iv_photo_3"
+                            android:layout_alignEnd="@+id/iv_photo_3"
+                            android:layout_alignBottom="@+id/iv_photo_3"
+                            android:background="@drawable/ic_baseline_photo_camera_24" />
+
+                        <ImageView
+                            android:id="@+id/iv_photo_4"
+                            android:layout_width="140dp"
+                            android:layout_height="120dp"
+                            android:layout_below="@+id/iv_photo_2"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/border_box"
+
+                            android:onClick="addingImage4" />
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignStart="@+id/iv_photo_4"
+                            android:layout_alignTop="@+id/iv_photo_4"
+                            android:layout_alignEnd="@+id/iv_photo_4"
+                            android:layout_alignBottom="@+id/iv_photo_4"
+                            android:background="@drawable/ic_baseline_photo_camera_24" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

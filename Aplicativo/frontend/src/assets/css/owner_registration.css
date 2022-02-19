@@ -1,0 +1,154 @@
+/* .navigation {
+    display: none;
+} */
+
+/* body {
+    background-color: black;
+} */
+
+.owner_container_registration_owner {
+    background-image: url('../img/fundo-login.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.owner_box_registration {
+
+    width: 70vw;
+    height: 80vh;
+
+    background-color: #FFF;
+
+    box-shadow: 0px 0px 999px black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.owner_logo_registration {
+    width: 25vw;
+}
+.owner_title_registration {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.owner_form_registration {
+    height: 60%;
+    width: 80%;
+}
+.input-form_registration_owner {
+    width: 45%;
+}
+.input_email-form_registration_owner {
+    width: 100%;
+}
+.inputs_left_registration_owner,
+.inputs_right_registration_owner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.passwords-form_registration_owner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_registration_owner {
+    width: 60%;
+}
+
+.owner_form_registration_owner {
+    margin: 0;
+    
+    border: 3px solid #222;
+
+    height: 35px;
+    width: 25vw;
+
+    transition-duration: .5s;
+}
+.owner_input_email {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+.owner_input_email input {
+    width: 95%;
+}
+.input-terms_registration_owner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 35px;
+    width: 94%;
+}
+.owner_passwords {
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-around;
+}
+.input-terms_registration_owner input {
+    width: 20px;
+
+    margin: 0;
+}
+
+.input-terms_registration_owner label {
+    margin: 0;
+    margin-left: 5px;
+
+    font-size: 15px;
+}
+.owner_form_registration_owner input:hover,
+.owner_form_registration_owner input:focus {
+    border-color: var(--cor-primaria);
+}
+.owner_buttons_register {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+
+.button-owner_registration {
+    width: 100%;
+}
+
+.owner_link_register {
+    width: 45%;
+}
+.owner_btn_regitration {
+    background-color: var(--cor-primaria);
+
+    transition-duration: .2s;
+}
+
+.owner_btn_regitration:hover {
+    background-color: #222;
+    color: var(--cor-primaria);
+
+    transform: scale(1.03);
+}
+
+.owner_btn_regitration:active {
+    transform: scale(1.0001);
+}
+
+.owner_btn_back_registration_owner {
+    background-color: var(--cor-terciaria);
+    color: #FFF;
+}

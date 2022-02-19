@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/navmenu_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:itemBackground="@color/gray_light"
+        app:itemIconTint="@color/gray"
+        app:itemTextColor="@color/gray"
+        app:menu="@menu/nav_menu" />
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_200"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/main_menu">
+
+        <ImageView
+            android:id="@+id/img_logo_toolbar"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+
+            android:src="@drawable/icon_ems_white"
+            android:layout_gravity="start" >
+        </ImageView>
+
+    </androidx.appcompat.widget.Toolbar>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

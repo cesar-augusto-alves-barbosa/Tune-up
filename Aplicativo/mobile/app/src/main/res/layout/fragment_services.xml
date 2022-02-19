@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ServicesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_screen_register_engine_service"
+            android:layout_width="wrap_content"
+            android:layout_height="570dp"
+            android:layout_centerVertical="true">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/rl_serviceOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_text_order"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/poppins_medium"
+
+                        android:text="@string/tl_orderservice"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+
+                        android:textSize="35sp" />
+
+                    <LinearLayout
+                        android:layout_width="370dp"
+                        android:layout_height="60dp"
+                        android:layout_below="@+id/tv_text_order"
+                        android:layout_centerHorizontal="true">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:layout_width="120dp"
+                                android:layout_height="60dp"
+                                android:layout_toLeftOf="@+id/rl_progress">
+
+                                <TextView
+                                    android:id="@+id/tv_not_started"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="@string/tl_order_status_notstarted"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+                                <View
+                                    android:id="@+id/vw_not_serviceOrder"
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    android:layout_below="@+id/tv_not_started"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginHorizontal="3dp"
+                                    android:background="@drawable/circle_activity_register_screens"
+                                    android:backgroundTint="@color/black" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/vw_not_serviceOrder"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:text="0"
+                                    android:textColor="@color/black" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl_progress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true">
+
+                                <TextView
+                                    android:id="@+id/tv_progress"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:textAlignment="center"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="@string/tl_order_status_progress"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+                                <View
+                                    android:id="@+id/vw_progress"
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    android:layout_below="@+id/tv_progress"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginHorizontal="3dp"
+                                    android:background="@drawable/circle_activity_register_screens"
+                                    android:backgroundTint="@color/yellow" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/vw_progress"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:text="0"
+                                    android:textColor="@color/black" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="120dp"
+                                android:layout_height="60dp"
+                                android:layout_toRightOf="@+id/rl_progress">
+
+                                <TextView
+                                    android:id="@+id/tv_conclude"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="@string/tl_order_status_concluded"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+                                <View
+                                    android:id="@+id/vw_conclude"
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    android:layout_below="@+id/tv_conclude"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginHorizontal="3dp"
+                                    android:background="@drawable/circle_activity_register_screens"
+                                    android:backgroundTint="@color/green" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/vw_conclude"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:text="0"
+                                    android:textColor="@color/black" />
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

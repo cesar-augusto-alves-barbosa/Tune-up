@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HistoryFragment"
+    android:background="#F6F6F6">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_screen_order_history"
+            android:layout_width="wrap_content"
+            android:layout_height="570dp"
+            android:layout_centerVertical="true">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:id="@+id/tv_view_title_order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Histórico de Serviços"
+                        android:textColor="#000"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/tv_view_text"
+                        android:layout_below="@+id/tv_view_title_order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+
+                        android:text="Pesquisa filtrada:"
+                        android:textSize="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_alignStart="@+id/et_filter_order">
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/et_filter_order"
+                        android:layout_below="@+id/tv_view_text"
+                        android:layout_width="220dp"
+                        android:layout_height="40dp"
+
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/input_border_box">
+                    </EditText>
+
+                    <Spinner
+                        android:id="@+id/et_filter_option"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/tv_view_text"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/input_border_box"
+                        android:entries="@array/filter_option" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_history_order"
+                        android:clickable="true"
+                        android:layout_width="280dp"
+                        android:layout_height="250dp"
+                        android:layout_below="@+id/et_filter_order"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/border_box_blue"
+                        android:focusable="true">
+
+                        <TextView
+                            android:id="@+id/tv_view_number_order"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="Ordem 001"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textSize="15sp"
+                            android:textColor="@color/black">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/tv_view_title_name_client"
+                            android:layout_below="@+id/tv_view_number_order"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="20dp"
+                            android:text="Nome:"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textSize="15sp">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/tv_view_name_client"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="Nadia Tavares"
+                            android:layout_below="@+id/tv_view_number_order"
+                            android:layout_marginTop="21dp"
+                            android:layout_marginStart="60dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textSize="15sp">
+                        </TextView>
+
+                        <View
+                            android:layout_width="250dp"
+                            android:layout_height="3dp"
+                            android:layout_below="@+id/tv_view_title_name_client"
+                            android:background="@drawable/input_underline"
+                            android:backgroundTint="@color/black">
+                        </View>
+
+                        <TextView
+                            android:id="@+id/tv_view_title_board"
+                            android:layout_below="@+id/tv_view_title_name_client"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="20dp"
+                            android:text="Placa:"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textSize="15sp">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/tv_view_board_client"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="EDK-3650"
+                            android:layout_below="@+id/tv_view_name_client"
+                            android:layout_marginTop="21dp"
+                            android:layout_marginStart="60dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textSize="15sp">
+                        </TextView>
+
+                        <View
+                            android:layout_width="250dp"
+                            android:layout_height="3dp"
+                            android:layout_below="@+id/tv_view_title_board"
+                            android:background="@drawable/input_underline"
+                            android:backgroundTint="@color/black">
+                        </View>
+
+                        <TextView
+                            android:id="@+id/tv_view_title_conclude_date"
+                            android:layout_below="@+id/tv_view_title_board"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="50dp"
+                            android:text="Data de conclusão:"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textSize="15sp">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/tv_view_conclude_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="12/08/2021"
+                            android:layout_below="@+id/tv_view_board_client"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginStart="155dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textSize="15sp">
+                        </TextView>
+
+                        <View
+                            android:layout_width="250dp"
+                            android:layout_height="3dp"
+                            android:layout_below="@+id/tv_view_title_conclude_date"
+                            android:background="@drawable/input_underline"
+                            android:backgroundTint="@color/black">
+                        </View>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

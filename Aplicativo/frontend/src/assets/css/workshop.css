@@ -1,0 +1,63 @@
+.workshop {
+    width: 100%;
+    height: 150px;
+
+    margin: 20px 0px;
+
+    background-color: var(--cor-secundaria);
+
+    border-radius: 20px;
+}
+
+.workshop_details {
+    margin: 0;
+
+    height: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.workshop img {
+    float: left;
+
+    height: 150px;
+
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.name-workshop {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color:white!important;
+}
+
+.name-address {
+    width: 60%;
+
+    color: #FFF;
+}
+
+.btn-details {
+    background-color: var(--cor-primaria);
+
+    width: 25%;
+    transition-duration: .5s;
+    
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+
+    padding: 8px;
+}
+
+.btn-details:hover {
+    transform: scale(1.09);
+}
+
+.btn-details:active {
+    transform: scale(1.02);
+}

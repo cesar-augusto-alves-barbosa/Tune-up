@@ -1,0 +1,4 @@
+{
+    "browser-preview.chromeExecutable": "/usr/bin/snap/chromium",
+    "browser-preview.startUrl": "localhost:3000/"
+}

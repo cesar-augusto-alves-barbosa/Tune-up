@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VisualizationInfoWorkshopActivity"
+
+    android:background="#F6F6F6">
+
+    <RelativeLayout
+        android:id="@+id/rl_head_profile"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/black"
+
+        android:padding="8dp">
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+
+            android:background="@drawable/ic_baseline_keyboard_arrow_left_24"
+
+            android:onClick="backHomeProfile" />
+
+        <TextView
+            android:id="@+id/tv_profile_user"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Editar Oficina"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_margin="12dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="13dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="EDITAR"
+            android:textColor="@color/white"
+
+            android:textSize="15sp"
+
+            android:onClick="editInfoWorkshop"/>
+
+        <ImageView
+            android:id="@+id/iv_circle_background"
+            android:layout_below="@+id/tv_profile_user"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/profile_circle_blue"
+            android:layout_margin="10dp"
+
+            android:layout_centerHorizontal="true">
+        </ImageView>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_head_profile" >
+
+        <RelativeLayout
+            android:id="@+id/rl_view_base_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_update_info_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/tv_info_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/input_underline"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="INFORMAÇÕES DA EMPRESA"
+
+                    android:textColor="@color/black"
+                    android:backgroundTint="#F6F6F6"
+
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_view_name"
+                    android:layout_below="@+id/tv_info_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Nome:"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/et_edit_name"
+                    android:layout_width="369dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_view_name"
+                    android:text="ReisCar"
+
+                    android:textColor="@color/black"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/tv_view_social_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_edit_name"
+
+                    android:layout_marginTop="20dp"
+
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Nome Social:"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/et_edit_social_name"
+                    android:layout_width="369dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_view_social_name"
+
+                    android:text="Oficina Reis Car"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_view_cnpj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_edit_social_name"
+
+                    android:layout_marginTop="20dp"
+
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="CNPJ:"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/et_edit_cnpj"
+                    android:layout_width="369dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_view_cnpj"
+
+                    android:text="32165498745"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_view_email_business"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_edit_cnpj"
+
+                    android:layout_marginTop="20dp"
+
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="E-mail Empresarial:"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/et_edit_email_business"
+                    android:layout_width="369dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_view_email_business"
+
+                    android:text="reiscar.oficina@gmail.com"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_view_phone_business"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_edit_email_business"
+
+                    android:layout_marginTop="20dp"
+
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Telefone Empresarial:"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/et_edit_phone_business"
+                    android:layout_width="369dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_view_phone_business"
+
+                    android:text="11 24589876"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_view_ie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_edit_phone_business"
+
+                    android:layout_marginTop="20dp"
+
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="IE (Inscrição Estadual):"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/et_edit_ie"
+                    android:layout_width="369dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_view_ie"
+
+                    android:text="1547896358"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_view_base_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_update_info_company"
+
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_info_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/input_underline"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="INFORMAÇÕES DE ENDEREÇO"
+
+                    android:backgroundTint="#F6F6F6"
+
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_view_cep"
+                    android:layout_below="@+id/tv_info_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="CEP:"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/et_edit_cep"
+                    android:layout_width="369dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_view_cep"
+
+                    android:text="02451040"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_view_road"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_edit_cep"
+
+                    android:layout_marginTop="20dp"
+
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Rua:"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/et_edit_road"
+                    android:layout_width="369dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_view_road"
+
+                    android:text="Rua El Dourado"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_view_district"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_edit_road"
+
+                    android:layout_marginTop="20dp"
+
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Bairro:"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/et_edit_district"
+                    android:layout_width="369dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_view_district"
+
+                    android:text="Jardim Esmeralda"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_view_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_edit_district"
+
+                    android:layout_marginTop="20dp"
+
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Número:"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/et_edit_number"
+                    android:layout_width="369dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_view_number"
+
+                    android:text="5144"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_view_complement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_edit_number"
+
+                    android:layout_marginTop="20dp"
+
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Complemento:"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/et_edit_complement"
+                    android:layout_width="369dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_view_complement"
+
+                    android:text="Galpão Alfa 1, 2 e 3"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_view_base_hour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_view_base_address"
+
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_info_hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/input_underline"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="INFORMAÇÕES DE HORÁRIO"
+
+                    android:backgroundTint="#F6F6F6"
+
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_info_txt_hour"
+                    android:layout_below="@+id/tv_info_hour"
+                    android:layout_width="369dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Funcionamento semanal de 8h00 ás 20h00 Funcionamento final de semana de 8h00 ás 18h00
+                    Funcionamento de feriado de 10h00 ás 16h00"
+                    android:textColor="@color/black"
+
+                    android:textAlignment="textStart"
+
+                    android:textSize="18sp"
+                    android:layout_marginBottom="15dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_view_base_services"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_view_base_hour"
+
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_info_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/input_underline"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="INFORMAÇÕES DE SERVIÇOS"
+
+                    android:backgroundTint="#F6F6F6"
+
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_info_txt_service"
+                    android:layout_below="@+id/tv_info_service"
+                    android:layout_width="369dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Serviços para Embreagem, Motor e estética"
+                    android:textColor="@color/black"
+
+                    android:textAlignment="textStart"
+
+                    android:textSize="18sp"
+                    android:layout_marginBottom="15dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

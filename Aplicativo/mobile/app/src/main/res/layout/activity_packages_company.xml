@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PackagesCompanyActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue_200"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:menu="@menu/packge_menu">
+
+            <ImageView
+                android:id="@+id/img_logo_toolbar"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+
+                android:src="@drawable/icon_ems_white"
+                android:layout_gravity="start" >
+            </ImageView>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Para seguir no cadastro conheça nossos pacotes e serviços"
+            android:id="@+id/tv_description_packages"
+            android:textAlignment="center"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="22sp"
+            android:layout_below="@+id/main_toolbar"
+            android:textColor="#000"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="30dp"
+            android:background="@drawable/input_underline"
+            android:width="300dp">
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="357dp"
+            android:layout_height="120dp"
+            android:id="@+id/rl_container_200"
+            android:layout_below="@id/tv_description_packages"
+            android:layout_centerInParent="true"
+            android:background="@drawable/gradiant_background_package_gray"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:src="@mipmap/diamond12x"
+                    android:id="@+id/iv_diamond12x"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Standard"
+                    android:textColor="#FFFF"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="3sp"
+                    android:layout_marginTop="22sp"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="R$200,00"
+                android:textColor="#FFFFFF"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/poppins_regular"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="357dp"
+            android:layout_height="120dp"
+            android:id="@+id/rl_container_350"
+            android:layout_below="@id/rl_container_200"
+            android:layout_centerInParent="true"
+            android:background="@drawable/gradiant_background_package_black"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:src="@mipmap/diamond22x"
+                    android:id="@+id/iv_diamond22x"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pro"
+                    android:textColor="#FFFF"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="3sp"
+                    android:layout_marginTop="22sp"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="R$350,00"
+                android:textColor="#FFFFFF"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/poppins_regular"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="357dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/rl_container_350"
+            android:layout_centerInParent="true"
+            android:background="@drawable/gradient_background_package_yellow"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:src="@mipmap/diamond32x"
+                    android:id="@+id/iv_diamond32x"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Premium"
+                    android:textColor="#FFFF"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="3sp"
+                    android:layout_marginTop="22sp"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="R$600,00"
+                android:textColor="#FFFFFF"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/poppins_regular"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

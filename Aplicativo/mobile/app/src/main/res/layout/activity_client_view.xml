@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClientViewActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/vw_band_black"
+            android:layout_width="125dp"
+            android:layout_height="182.14dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/band_layout"
+            android:backgroundTint="@color/black" />
+
+        <View
+            android:id="@+id/vw_band_blue"
+            android:layout_width="65dp"
+            android:layout_height="96.14dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/band_layout"
+            android:backgroundTint="@color/blue"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:id="@+id/ll_top_bar"
+            android:layout_width="450dp"
+            android:layout_height="60dp"
+            android:background="#0976DA"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:id="@+id/tv_title_employee_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Clientes"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_container_employee"
+            android:layout_width="135dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/tv_title_employee_view"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="25dp"
+            android:background="#222222"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Nadia Tavares"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tv_acess_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Placa do veículo:"
+                android:textColor="#FFFFFF"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/tv_employee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="JUZ9119"
+                android:textColor="#FFFFFF"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="(11)99999-9999"
+                android:textColor="#FFFFFF"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_container_employee_two"
+            android:layout_width="135dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/ll_container_employee"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp"
+            android:background="#222222"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name_user_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Alan Ferraz"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tv_acess_level_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Placa do veículo:"
+                android:textColor="#FFFFFF"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/tv_employee_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="HXH4087"
+                android:textColor="#FFFFFF"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/tv_phone_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="(11)99999-9999"
+                android:textColor="#FFFFFF"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_container_employee_three"
+            android:layout_width="135dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/ll_container_employee_two"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp"
+            android:background="#222222"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name_user_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Lucas Castro"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tv_acess_level_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Placa do veículo:"
+                android:textColor="#FFFFFF"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/tv_employee_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="AGD8033"
+                android:textColor="#FFFFFF"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/tv_phone_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="(11)99999-9999"
+                android:textColor="#FFFFFF"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_container_employee_four"
+            android:layout_width="135dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/tv_title_employee_view"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="25dp"
+            android:background="#222222"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name_user_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Carlos Perezes"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tv_acess_level_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Placa do veículo:"
+                android:textColor="#FFFFFF"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/tv_employee_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="LVL1379"
+                android:textColor="#FFFFFF"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/tv_phone_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="(11)99999-9999"
+                android:textColor="#FFFFFF"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_container_employee_five"
+            android:layout_width="135dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/ll_container_employee_four"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="50dp"
+            android:background="#222222"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name_user_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Julio César"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tv_acess_level_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Placa do veículo:"
+                android:textColor="#FFFFFF"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/tv_employee_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="KJM4386"
+                android:textColor="#FFFFFF"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/tv_phone_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="(11)99999-9999"
+                android:textColor="#FFFFFF"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_below="@id/ll_container_employee_five"
+            android:layout_marginLeft="235dp"
+            android:layout_marginTop="50dp"
+            android:src="@mipmap/sinalmais" />
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

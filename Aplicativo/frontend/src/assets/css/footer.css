@@ -1,0 +1,10 @@
+.links_footer {
+    width: 20%;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.social_link-footer {
+    font-size: 50px;
+}

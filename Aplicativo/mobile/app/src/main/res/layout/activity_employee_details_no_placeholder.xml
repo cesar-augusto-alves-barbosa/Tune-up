@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".EmployeeDetailsNoPlaceholderActivity">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+        <View
+            android:id="@+id/vw_band_black"
+            android:layout_width="125dp"
+            android:layout_height="182.14dp"
+            android:rotationY="540"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/band_layout"
+            android:backgroundTint="@color/black" />
+
+    <View
+        android:id="@+id/vw_band_blue"
+        android:layout_width="65dp"
+        android:layout_height="96.14dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/band_layout"
+        android:backgroundTint="@color/blue"
+        android:rotationY="540"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:id="@+id/rl_box_geral"
+        android:layout_width="wrap_content"
+        android:layout_height="650dp"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/iv_set"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignStart="@+id/rl_box_1"
+            android:src="@mipmap/set" />
+
+        <RelativeLayout
+            android:id="@+id/rl_box_1"
+            android:layout_width="370dp"
+            android:layout_height="520dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border_box_blue">
+
+            <TextView
+                android:id="@+id/tv_view_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Informações do Funcionário"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_options_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/ic_baseline_more_vert_24"></ImageView>
+
+            <RelativeLayout
+                android:id="@+id/rl_et_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_view_title"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tv_view_name_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/tl_name_orderservice"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_view_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/tv_view_name_title"
+                    android:text="César Cândido Augusto Silva"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_et_dateBirth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_et_name">
+
+                <TextView
+                    android:id="@+id/tv_view_dateBirth_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/tl_date_birth"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/et_view_dateBirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/tv_view_dateBirth_title"
+                    android:text="20/05/1983"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_et_cpf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_et_dateBirth"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tv_view_cpf_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/tl_cpf"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/et_view_cpf"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/tv_view_cpf_title"
+                    android:text="184.698.058-31"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_et_office"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_et_cpf"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tv_view_office_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Cargo:"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/et_view_office"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/tv_view_office_title"
+                    android:text="Chefe da Oficina"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_et_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_et_office"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tv_view_email_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/ph_email"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/et_view_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/tv_view_email_title"
+                    android:text="@string/ph_email_cesar"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_et_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_et_email"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tv_view_phone_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/tl_phone"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/et_view_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/tv_view_phone_title"
+                    android:text="@string/txt_number_employee_manager"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

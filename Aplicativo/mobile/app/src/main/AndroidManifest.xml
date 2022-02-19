@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.apptuneup"
+    android:targetSandboxVersion="1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo_white_playstore_foreground"
+        android:label="TuneUp - EMS"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_logo_black_playstore"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppTuneUp"
+        android:usesCleartextTraffic="true">
+<<<<<<< HEAD
+=======
+
+        <activity
+            android:name=".UpdateInfoOwnerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".UpdateInfoWorkshopActivity"
+            android:exported="true" />
+        <activity
+            android:name=".VisualizationInfoWorkshopActivity"
+            android:exported="true" />
+        <activity
+            android:name=".VisualizationInfoOwnerActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".EmployeeProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".OwnerProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".OwnerRegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ServiceScreen"
+            android:exported="true" />
+        <activity
+            android:name=".PackagePremiumActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PackageProActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PackageStandardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SucessPaymentPackagesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PaymentPackageStandardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PopUpRegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CreateNewClientActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CreateNewEmployeeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EmployeeDetailsNoPlaceholderActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EmployeeDetailsActivity"
+            android:exported="false" />
+>>>>>>> edaec643b73b27cbbf83c63d789a54eea75ede73
+        <activity
+            android:name=".PaymentPackagePremiumActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ClientDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ClientDetailsNoPlaceholderActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ClientViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterBrakeServiceActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterClutchServicesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EmployeeViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterBeautyPreparationServicesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterElectricalElectronicsServiceActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterOpeningHoursActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterOpeningHoursSpecificActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterEngineServiceActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterAddressCompanyActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SucessRegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterCompanyActivity"
+<<<<<<< HEAD
+            android:exported="true" /> <!-- Register Brake Service -->
+        <!-- SplashScreen -->
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true">
+=======
+            android:exported="true" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true" >
+>>>>>>> edaec643b73b27cbbf83c63d789a54eea75ede73
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+<<<<<<< HEAD
+        </activity> <!-- LoginScreen -->
+=======
+        </activity>
+>>>>>>> edaec643b73b27cbbf83c63d789a54eea75ede73
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+    </application>
+
+</manifest>

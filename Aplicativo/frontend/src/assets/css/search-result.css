@@ -1,0 +1,29 @@
+.box_workshops {
+    width: 80%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: center;
+
+    margin: 30px 0px;
+}
+.search_field {
+    margin: 30px auto;
+}
+
+.search_field .btn_search {
+    min-width: 200px;
+
+    background-color: var(--cor-primaria);
+
+    transition-duration: .5s;
+}
+
+.search_field .btn_search:hover {
+    transform: scale(1.09);
+}
+
+.search_field .btn_search:active {
+    transform: scale(1.02);
+}

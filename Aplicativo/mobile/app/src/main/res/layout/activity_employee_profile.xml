@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#F6F6F6"
+    tools:context=".EmployeeProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_head_profile"
+
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/black">
+
+        <TextView
+            android:id="@+id/tv_profile_user"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="PERFIL DE USUÁRIO"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_margin="10dp" />
+
+        <ImageView
+            android:id="@+id/iv_circle_background"
+            android:layout_below="@+id/tv_profile_user"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/profile_circle_blue"
+            android:layout_margin="10dp">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_workshop_name"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="12dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/iv_circle_background"
+
+            android:text="Oficina Reis's Car"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_below="@+id/tv_workshop_name"
+            android:layout_alignStart="@+id/tv_workshop_name"
+            android:layout_width="150dp"
+            android:layout_height="2dp"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_employee_name"
+            android:layout_below="@+id/tv_workshop_name"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="12dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/iv_circle_background"
+
+            android:text="César Augusto"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="583dp"
+        android:layout_marginTop="200dp" >
+
+        <RelativeLayout
+        android:id="@+id/rl_box_myhome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_back_to_myhome"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="20dp"
+
+            android:text="Minha Home"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+
+            android:fontFamily="@font/poppins_medium">
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+
+            android:layout_alignRight="@+id/tv_back_to_myhome"
+            android:layout_marginTop="23dp">
+        </ImageView>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_box_update_profile"
+            android:layout_below="@+id/rl_box_myhome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_update_profile"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="20dp"
+
+                android:text="Atualizar Dados de Perfil"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+
+                android:fontFamily="@font/poppins_medium">
+            </TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+
+                android:layout_alignRight="@+id/tv_update_profile"
+                android:layout_marginTop="23dp">
+            </ImageView>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/vw_division"
+            android:layout_below="@id/rl_box_update_profile"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#800976DA" />
+
+        <RelativeLayout
+            android:id="@+id/rl_box_contact_tuneup"
+            android:layout_below="@+id/vw_division"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_contact_tuneup"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="20dp"
+
+                android:text="Contato TuneUp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+
+                android:fontFamily="@font/poppins_medium">
+            </TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+
+                android:layout_alignRight="@+id/tv_contact_tuneup"
+                android:layout_marginTop="23dp">
+            </ImageView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_box_doubts"
+            android:layout_below="@+id/rl_box_contact_tuneup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_doubts"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="20dp"
+
+                android:text="Dúvidas"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+
+                android:fontFamily="@font/poppins_medium">
+            </TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+
+                android:layout_alignRight="@+id/tv_doubts"
+                android:layout_marginTop="23dp">
+            </ImageView>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/vw_division2"
+            android:layout_below="@id/rl_box_doubts"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#800976DA" />
+
+        <RelativeLayout
+            android:id="@+id/rl_box_singout"
+            android:layout_below="@+id/vw_division2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_singout"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="20dp"
+
+                android:text="Sair do App"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+
+                android:fontFamily="@font/poppins_medium">
+            </TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+
+                android:layout_alignRight="@+id/tv_singout"
+                android:layout_marginTop="23dp">
+            </ImageView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:paddingBottom="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_ems_black_trans">
+        </ImageView>
+
+    </LinearLayout>
+
+</FrameLayout>

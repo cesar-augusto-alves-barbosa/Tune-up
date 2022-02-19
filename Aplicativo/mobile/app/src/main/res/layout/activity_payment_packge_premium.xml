@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentPackagePremiumActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/ll_container_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_underline" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentStart="true"
+                    android:src="@mipmap/card_security" />
+
+                <TextView
+                    android:id="@+id/tv_payment_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/tl_payment"
+                    android:textColor="#000"
+                    android:textSize="35sp"
+                    android:layout_marginStart="100dp"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_method_payment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/ll_container_payment"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/tl_select_payment"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="25sp" />
+
+                <Spinner
+                    android:layout_width="350dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/input_border_box"
+                    android:entries="@array/forma_pagamento">
+                </Spinner>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/tl_number_card"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_number_card"
+                    android:layout_width="350dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/input_border_box"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:layout_width="340dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp">
+
+                        <RadioButton
+                            android:id="@+id/rb_visa_radio"
+                            android:layout_width="31dp"
+                            android:layout_height="28dp"
+                            android:layout_centerHorizontal="true" />
+
+                        <ImageView
+                            android:id="@+id/iv_visa"
+                            android:layout_width="35dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:src="@mipmap/visa" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp">
+
+                        <RadioButton
+                            android:id="@+id/rb_american_express_radio"
+                            android:layout_width="31dp"
+                            android:layout_height="28dp"
+                            android:layout_centerHorizontal="true" />
+
+                        <ImageView
+                            android:id="@+id/iv_american_express"
+                            android:layout_width="38dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="25dp"
+                            android:src="@mipmap/american" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp">
+
+                        <RadioButton
+                            android:id="@+id/rb_hipercard_radio"
+                            android:layout_width="31dp"
+                            android:layout_height="28dp"
+                            android:layout_centerHorizontal="true" />
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="36dp"
+                            android:src="@mipmap/hipercard" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp">
+
+                        <RadioButton
+                            android:id="@+id/rb_diners_club"
+                            android:layout_width="31dp"
+                            android:layout_height="28dp"
+                            android:layout_centerHorizontal="true" />
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="60dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="27dp"
+                            android:src="@mipmap/diners" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp">
+
+                        <RadioButton
+                            android:id="@+id/rb_master_card_radio"
+                            android:layout_width="31dp"
+                            android:layout_height="28dp"
+                            android:layout_centerHorizontal="true" />
+
+                        <ImageView
+                            android:layout_width="41dp"
+                            android:layout_height="35dp"
+                            android:layout_alignParentBottom="true"
+                            android:src="@mipmap/mastercard" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/rb_elo_radio"
+                            android:layout_width="31dp"
+                            android:layout_height="28dp"
+                            android:layout_centerHorizontal="true" />
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:layout_alignParentBottom="true"
+                            android:src="@mipmap/elo" />
+                    </RelativeLayout>
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/tl_times_card"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/sp_card_payment_times"
+                    android:layout_width="350dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/input_border_box"
+                    android:entries="@array/vezes_cartao">
+                </Spinner>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/tl_name_printed_card"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_printed_card"
+                    android:layout_width="350dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/input_border_box"
+                    android:inputType="text"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/tl_validity_card"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginStart="6dp"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/input_border_box"
+                        android:entries="@array/mes_cartao">
+                    </Spinner>
+
+                    <Spinner
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/input_border_box"
+                        android:entries="@array/ano_cartao">
+                    </Spinner>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Cod. Segurança"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/et_code_card"
+                    android:layout_width="183dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/input_border_box"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/tl_cpf"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/et_cpf"
+                    android:layout_width="350dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/input_border_box"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_container_package"
+                    android:layout_width="353dp"
+                    android:layout_height="112dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/gradient_background_package_yellow">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv_diamond"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:src="@mipmap/diamond12x" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="25dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/tl_premium"
+                            android:textColor="#FFFF"
+                            android:textSize="42sp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:text="@string/tl_pack_premium"
+                    android:textColor="#000"
+                    android:textSize="20sp" >
+                </TextView>
+
+                <View
+                    android:layout_width="260dp"
+                    android:layout_height="3dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/input_underline" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:width="350dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Valor da compra:"
+                    android:textColor="#000"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:width="350dp"
+                    android:text="@string/tl_price_premium"
+                    android:textColor="#000"
+                    android:textSize="19sp" />
+
+                <Button
+                    android:layout_width="260dp"
+                    android:layout_height="51dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:backgroundTint="#3EFF1F"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Concluir Pagamento"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textSize="18sp">
+                </Button>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,420 @@
+<resources>
+
+    <!--Menu pagamento-->
+    <string name="ph_fees">Menu Pagamento</string>
+    <string name="fees_1x">1x Vez S/ Juros</string>
+    <string name="fees_2x">2x Vez S/ Juros</string>
+    <string name="fees_3x">3x Vez S/ Juros</string>
+    <string name="fees_4x">4x Vez S/ Juros</string>
+    <string name="fees_5x">5x Vez S/ Juros</string>
+    <string name="fees_6x">6x Vez S/ Juros</string>
+    <string name="fees_7x">7x Vez S/ Juros</string>
+    <string name="fees_8x">8x Vez S/ Juros</string>
+    <string name="fees_9x">9x Vez S/ Juros</string>
+    <string name="fees_10x">10x Vez S/ Juros</string>
+    <string name="fees_11x">11x Vez S/ Juros</string>
+    <string name="fees_12x">12x Vez S/ Juros</string>
+    <string name="txt_card_credit">Cartão de crédito</string>
+    <string name="txt_card_debit">Cartão de débito</string>
+    <string name="txt_pix">Pix</string>
+    <string name="txt_bank_slip">Boleto bancário</string>
+<<<<<<< HEAD
+=======
+
+    <!-- ComboBox Status Ordem de Serviço -->
+    <string-array name="status_ordem">
+        <item>Em andamento</item>
+        <item>Não iniciado</item>
+        <item>Concluído</item>
+    </string-array>
+
+    <!-- ComboBox Forma de Pagamento -->
+    <string-array name="forma_pagamento">
+        <item>Cartão de crédito</item>
+        <item>Cartão de débito</item>
+        <item>Pix</item>
+        <item>Boleto bancário</item>
+    </string-array>
+
+    <!-- ComboBox Vezes no Cartão -->
+    <string-array name="vezes_cartao">
+        <item>1x Vez S/ Juros</item>
+        <item>2x Vez S/ Juros</item>
+        <item>3x Vez S/ Juros</item>
+        <item>4x Vez S/ Juros</item>
+        <item>5x Vez S/ Juros</item>
+        <item>6x Vez S/ Juros</item>
+        <item>7x Vez S/ Juros</item>
+        <item>8x Vez S/ Juros</item>
+        <item>9x Vez S/ Juros</item>
+        <item>10x Vez S/ Juros</item>
+        <item>11x Vez S/ Juros</item>
+        <item>12x Vez S/ Juros</item>
+    </string-array>
+
+    <!-- ComboBox Mês no Cartão -->
+    <string-array name="mes_cartao">
+        <item>Mês</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <!-- ComboBox Ano no Cartão -->
+    <string-array name="ano_cartao">
+        <item>Ano</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+    </string-array>
+>>>>>>> edaec643b73b27cbbf83c63d789a54eea75ede73
+
+    <!--    Tela pacote de uso -->
+    <string name="tl_payment">Pagamento</string>
+    <string name="tl_select_payment">Selecione a forma e pagamento</string>
+    <string name="tl_number_card">Número do cartão</string>
+    <string name="tl_times_card">Vezes no cartão</string>
+    <string name="tl_name_printed_card">Nome impresso no cartão</string>
+    <string name="tl_validity_card">Validade:</string>
+    <string name="ph_month_card">Mês</string>
+    <string name="ph_year_card">Ano:</string>
+    <string name="tl_security_code">Código de segurança</string>
+
+    <string name="ph_qtdpayment">01</string>
+    <string name="ph_qtdpayment1">02</string>
+    <string name="ph_qtdpayment2">03</string>
+    <string name="ph_qtdpayment3">04</string>
+    <string name="ph_qtdpayment4">05</string>
+    <string name="ph_qtdpayment5">06</string>
+    <string name="ph_qtdpayment6">07</string>
+    <string name="ph_qtdpayment7">08</string>
+    <string name="ph_qtdpayment8">09</string>
+    <string name="ph_qtdpayment9">10</string>
+    <string name="ph_qtdpayment10">11</string>
+    <string name="ph_qtdpayment11">12</string>
+
+    <string name="ph_validation4">2022</string>
+    <string name="ph_validation5">2023</string>
+    <string name="ph_validation6">2024</string>
+    <string name="ph_validation7">2025</string>
+    <string name="ph_validation8">2026</string>
+    <string name="ph_validation9">2027</string>
+    <string name="ph_validation10">2028</string>
+
+    <!--    Tela inicial/login-->
+    <string name="tl_login">Entrar</string>
+    <string name="ph_email">E-mail:</string>
+    <string name="ph_password">Senha</string>
+    <string name="txt_forgot_password">Esqueceu a senha?</string>
+    <string name="txt_Enter">Entrar </string>
+    <string name="txt_or">Ou</string>
+    <string name="txt_register">Cadastrar-se</string>
+
+    <!--    Tela de pacotes de uso-->
+    <string name="tl_Pack">Para seguir no cadastro conheça nossos pacotes e serviços</string>
+    <string name="tl_standard">Standard</string>
+    <string name="tl_price_standard">200,00 </string>
+    <string name="tl_pro">Pro</string>
+    <string name="tl_price_pro">350,00</string>
+    <string name="tl_premium">Premium</string>
+    <string name="tl_price_premium">600,00</string>
+    
+    <string-array name="filter_option">
+        <item>FILTROS</item>
+        <item>Cliente</item>
+        <item>Placa</item>
+        <item>Data</item>
+        <item>Nº Ordem</item>
+    </string-array>
+
+    <!--Menu-->
+    <string name="tl_menu">Home</string>
+    <string name="tl_pack_standard">Pacote Standard</string>
+    <string name="tl_pack_pro">Pacote Pro </string>
+    <string name="tl_pack_premium">Pacote Premium</string>
+    <string name="tl_logout">Sair</string>
+
+    <!--    Pacote standard-->
+    <string name="txt_pack_standard">Nosso pacote standard é um básico que oferece uma melhor
+        organização de serviços e seus funcionário</string>
+    <string name="txt_pack_standard_time">3 meses de uso </string>
+    <string name="txt_pack_standard_desc">5 funcionários para o registro</string>
+    <string name="txt_standard_employee">X</string>
+    <string name="txt_helpdesk">Suporte 24H</string>
+
+    <!--    Pacote Pro-->
+    <string name="txt_pack_pro">Nosso pacote Pro é um mais robusto entregando melhor
+        controle dos seus negócios e disponibilizados por 1 ano</string>
+    <string name="txt_pack_pro_time">1 ano de uso </string>
+    <string name="txt_pack_pro_desc">10 funcionários para o registro</string>
+    <string name="txt_pack_pro_employee">350 clientes para cadastro</string>
+
+
+    <!--    Pacote Premium-->
+    <string name="txt_pack_premium">Nosso pacote Premium é melhor e o mais robusto,entregando ferramentas
+        ilimitadas durantes 2 anos </string>
+    <string name="txt_pack_premium_time">2 anos de uso </string>
+    <string name="txt_pack_premium_desc">Ilimitado</string>
+
+    <!--    Finalização da compra-->
+    <string name="txt_completed_purchase">Compra de pacote realizada com sucesso!
+    Vamos direciona-lo para continuar o cadastro</string>
+
+    <!--    Tela Home ordem de serviço-->
+    <string name="tl_orderservice">Ordens de serviço</string>
+    <string name="tl_order_status_notstarted">Não iniciado</string>
+    <string name="tl_order_status_progress">Em andamento </string>
+    <string name="tl_order_status_concluded">Concluído </string>
+    <string name="tl_order_0001">Ordem 0001 </string>
+    <string name="tl_name_orderservice">Nome: </string>
+    <string name="tl_board_orderservice">Placa: </string>
+    <string name="tl_status_orderservice">Status </string>
+    <string name="tl_order_0002">Ordem 0002 </string>
+
+    <!-- Tela de serviço- visualização   -->
+    <string name="tl_status_info_customers">Status</string>
+    <string name="ph_orderview2">Informações do cliente </string>
+    <string name="tl_cpf">CPF:</string>
+    <string name="tl_info_orderservice">Informações da ordem de serviço</string>
+    <string name="tl_price_orderservice">Preço:</string>
+    <string name="tl_date_estimated">Data estimada:</string>
+    <string name="tl_date_issue">Data de emissão:</string>
+    <string name="txt_change_status_service">Deseja alterar o status de serviço?</string>
+    <string name="txt_delete_order_service">Deseja excluir a ordem de serviço?</string>
+
+    <!--    Drop menu-->
+    <string name="tl_dropmenu">Drop Menu</string>
+    <string name="tl_edit">Editar</string>
+    <string name="tl_delete">Excluir</string>
+
+    <!--    Salvar alterações-->
+    <string name="txt_save">Deseja salvar alterações?</string>
+
+    <!--  Menu ordem de serviço  -->
+    <string name="tl_service_history">Histórico de serviços</string>
+    <string name="tl_help_tuneup">Ajuda TuneUp</string>
+
+    <!--    PopUp-->
+    <string name="popup_save">Alterações salvas</string>
+    <string name="popup_error">Ocorreu um erro</string>
+    <string name="popup_delete_completed">Exclusão concluída</string>
+
+    <!--    Tela de serviço - funcionários-->
+    <string name="tl_employee">Funcionários</string>
+    <string name="tl_name_employee_cesar">César Candido</string>
+    <string name="txt_level_employee">Nível de acesso:Gerente</string>
+    <string name="txt_number_employee_manager">(11)99999-9999</string>
+
+    <string name="tl_name_employee_douglas">Douglas Gonzaga</string>
+    <string name="txt_level_employee_mechanic">Nível de acesso:Mecânico</string>
+
+
+    <string name="txt_name_employee_luisa">Luisa Helenna</string>
+    <string name="txt_level_employee_mechanics">Nível de acesso:Mecânica</string>
+
+
+    <string name="txt_name_employee_maria">Maria Carmo</string>
+    <string name="txt_level_employee_workshop">Nível de acesso:Chefe de oficina</string>
+
+
+    <string name="tl_name_employee_lucas">Lucas Silva</string>
+
+
+    <string name="txt_add_new_employee">Deseja adicionar um novo funcionário?</string>
+    <string name="txt_delete_employee">Deseja excluir funcionário?</string>
+
+    <!--Informações do Funcionário-->
+    <string name="ph_cesar_augusto_silva">Cesar augusto silva</string>
+    <string name="tl_date_birth">Data de nascimento:</string>
+    <string name="ph_date_birth">02/04/2001</string>
+    <string name="ph_cpf">440.567.546-05</string>
+    <string name="tl_office">Cargo:</string>
+    <string name="ph_office_manager">Chefe de oficina</string>
+    <string name="ph_email_cesar">cesarcandido@gmail.com</string>
+    <string name="tl_phone">Telefone/Celular:</string>
+
+    <string name="txt_save_edit">Salvar edição</string>
+    <string name="txt_cancel">Cancelar</string>
+
+    <!--    Tela de clientes-->
+    <string name="tl_customers">Clientes</string>
+    <string name="tl_name_customers_nadia">Nadia Tavares</string>
+    <string name="txt_plate_license">Placa do veículo:JUZ9119</string>
+    <string name="txt_number_customers">(11)11111-1111</string>
+
+    <string name="tl_name_customers_carlos">Carlos Perezes</string>
+    <string name="txt_license_lvl">Placa do veículo:LVL1331</string>
+
+
+    <string name="tl_name_customers_alan">Alan Ferraz</string>
+    <string name="txt_license_hxh">Placa do veículo:HXH4819</string>
+
+
+    <string name="tl_name_customers_julio">Julio Cesar</string>
+    <string name="txt_license_kjm">Placa do veículo:KJM4386</string>
+
+
+    <string name="tl_name_customers_lucas_castro">Lucas Castro</string>
+    <string name="txt_license_agd">Placa do veículo:AGD8033</string>
+
+
+    <string name="txt_add_new_customers">Deseja adicionar um novo cliente?</string>
+    <string name="txt_delete_customers">Deseja excluir cliente?</string>
+
+    <string name="tl_data_client">Dados do cliente</string>
+
+    <string name="ph_name_customers_nadia">Nadia Tavares Souza</string>
+
+    <string name="ph_cpf_customers_nadia">420.567.546-05</string>
+
+    <string name="ph_date_birth_nadia">04/05/2001</string>
+
+    <string name="ph_email_customers_nadia">nadiaTsouza@hotmail.com</string>
+
+    <string name="tl_model_car">Modelo:</string>
+
+    <!--    Tela de histórico-->
+    <string name="tl_search_service">Pesquisa de serviço</string>
+
+    <string name="txt_plate_edk">EDK-3650</string>
+    <string name="txt_completion_date">Data de conclusão: 12/082021</string>
+
+
+    <string name="tl_placa_menu">Placa:</string>
+    <string name="tl_date">Data</string>
+    <string name="tl_order_numver">Número de ordem</string>
+    <string name="tl_name">Nome</string>
+
+    <!--    Menu histórico-->
+    <string name="tl_generate_pdf">Gerar PDF</string>
+    <string name="tl_generate_qrcode">Gerar QRcode</string>
+
+
+    <!--  Botões - Área de cadstro  -->
+    <string name="txt_back_button">Voltar</string>
+    <string name="txt_next_button">Próximo</string>
+    <string name="txt_conclude_button">Concluir</string>
+
+    <!--Informações da empresa-->
+    <string name="tl_company_information">Informações da empresa</string>
+    <string name="app_name">EMS</string>
+    <string name="tl_name_workshop">Nome da oficina</string>
+    <string name="ph_corporate_name">Razão social</string>
+    <string name="ph_cnpj">CNPJ</string>
+    <string name="ph_email_company">Email empresarial</string>
+    <string name="ph_phone_company">Telefone empresarial</string>
+    <string name="ph_state_registration">IE (Inscrição Estadual)</string>
+
+    <!--    Informações do endereço-->
+    <string name="ph_cep">Cep</string>
+    <string name="ph_street">Rua</string>
+    <string name="ph_district">Bairro</string>
+    <string name="ph_numberstreet">Número da rua </string>
+    <string name="ph_complement">Complemento do endereço </string>
+
+    <!--    Horário de funcionamento-->
+    <string name="tl_opening">Horário de funcionamento</string>
+    <string name="tl_start_opening_hours">Horário de ínicio </string>
+    <string name="tl_finish_opening_hours">Horário de fechamento</string>
+    <string name="txt_monday">Segunda</string>
+    <string name="ph_tuesday">Terça</string>
+    <string name="ph_wednesday">Quarta</string>
+    <string name="txt_thursday">Quinta</string>
+    <string name="txt_friday">Sexta</string>
+
+    <!-- Horário de funcionamento   -->
+    <string name="txt_sundays">Funciona aos domingos?</string>
+    <string name="txt_yes">Sim</string>
+    <string name="txt_no">Não</string>
+    <string name="txt_holiday">Funciona aos feriados?</string>
+
+    <!--    Serviços de freio-->
+    <string name="tl_brake_service">Serviços de freio</string>
+    <string name="txt_insert_change">Troca de pastilhas</string>
+    <string name="txt_tires">Pneus</string>
+    <string name="txt_brake_lining">Lona de freios</string>
+    <string name="txt_alignment">Alinhamento</string>
+    <string name="ph_brake_disc">Disco de freios</string>
+    <string name="txt_balancing">Balenceamento</string>
+    <string name="txt_brake_cables">Cabos de freios</string>
+    <string name="txt_abs_brakes">Freios ABS</string>
+    <string name="txt_brake_hydro">Hidro vácuo de freios</string>
+    <string name="txt_review_brake_components">Revisão dos componentes de freios</string>
+    <string name="txt_alignment_balancing">Alinhamento e Balenciamento</string>
+
+    <!--Serviços de motor -->
+    <string name="txt_engine_services">Serviços de motor</string>
+    <string name="txt_engine_oil">Troca de oléo do motor</string>
+    <string name="txt_rectify_engines">Retificar motores</string>
+    <string name="txt_cooling">Arrefecimento</string>
+    <string name="txt_chaning">Troca de filtros</string>
+    <string name="txt_diesel_cycle">Motores ciclo diesel</string>
+    <string name="txt_radiators">Radiadores</string>
+    <string name="txt_otto_cycle">Motores ciclo otto</string>
+    <string name="txt_eletronic_injection">Injeção eletrônica</string>
+    <string name="txt_engine_regulators">Reguladores de motor</string>
+    <string name="txt_eletronic_injection_ignition">Injeção e ignição eletrônica</string>
+    <string name="txt_eletronnic_diesel">Injeção eletrônica diesel</string>
+
+    <!--    Serviços de estética e preparação-->
+    <string name="txt_aesthetics_preparation">Serviços de estética e preparação</string>
+    <string name="txt_aesthetics">Estética</string>
+    <string name="txt_preparation">Preparação</string>
+    <string name="txt_funnel">Funilária</string>
+    <string name="txt_plot">Plotagem</string>
+    <string name="txt_tapestry">Tapaçaria</string>
+    <string name="txt_cleaning_fluids">Limpeza e Fluídos</string>
+    <string name="txt_washing_polishing">Lavagem e Polimento</string>
+    <string name="txt_turbo">Turbo</string>
+    <string name="txt_power_remap">Remap de potência</string>
+    <string name="txt_suspension">Suspensão</string>
+    <string name="txt_engine_preparation">Preparação de motores</string>
+
+    <!--    Serviços de elétrica e eletrônica-->
+    <string name="txt_electrical_eletronic_services">Serviços de elétrica e eletrônica</string>
+    <string name="txt_electrical_electronics">Elétrica e Eletrônica</string>
+    <string name="txt_multimedia_exchange">Troca de multimídia</string>
+    <string name="txt_sound_installation">Instalação de som</string>
+    <string name="txt_electric_windows">Vidros elétricos</string>
+    <string name="txt_led_application">Aplicação de led</string>
+    <string name="txt_dashboard_customization">Personalização de painel</string>
+    <string name="txt_alarm">Alarme</string>
+    <string name="txt_locks">Travas</string>
+    <string name="txt_airbag">Air bag</string>
+    <string name="txt_repair_modules">Reparo de módulos</string>
+
+    <!--    Serviços de embreagem-->
+    <string name="tl_clutch_services">Serviços de embreagem</string>
+    <string name="txt_clutch_maintenance">Manutenção de embreagem</string>
+    <string name="txt_change_disk">Troca disco</string>
+    <string name="txt_plateau_switch">Troca de platô</string>
+    <string name="ph_clutch2">Vidros elétricos</string>
+    <string name="txt_bearing">Rolamento</string>
+    <string name="txt_cables">Cabos</string>
+
+    <!--    As duas últimas  tela de cadastro - TERMOS e condições-->
+    <string name="txt_msg_registering_ems">Ao se cadastrar você concorda que a EMS</string>
+    <string name="txt_send_notifications">◉ Envie notificações sobre atualizações das ordens de serviço</string>
+    <string name="txt_terms_acess">◉ Tenha acesso aos arquivos e a câmera do dispositivo</string>
+    <string name="txt_msg_registration_successfull">Cadastro realizado com sucesso!</string>
+    <string name="ph_standard">Standard</string>
+<<<<<<< HEAD
+
+
+=======
+  
+>>>>>>> edaec643b73b27cbbf83c63d789a54eea75ede73
+</resources>

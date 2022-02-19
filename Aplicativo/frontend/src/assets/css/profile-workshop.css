@@ -1,0 +1,206 @@
+
+.box-profile_workshop {
+    margin: 30px auto;
+    width: 80%;
+
+    border: 3px solid black;
+    border-radius: 30px;
+    height: 100%;
+
+    padding: 20px;
+}
+
+.box-img_workshop-profile_workshop {
+    border: 3px solid black;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-img_workshop-profile_workshop img {
+    height: 90%;
+}
+.info_profile_workshop {
+    margin-bottom: 30px;
+}
+.info_profile_workshop,
+.info_workshop {
+    display: flex;
+    justify-content: space-around;
+}
+
+.info_workshop {
+    width: 70%;
+}
+
+.name_opening_hours_info_workshop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    font-weight: 500;
+
+    height: 100%;
+}
+.opening_hours_text-profile_workshop {
+    min-width: 300px;
+}
+.name-profile_workshop{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.location_contact-profile_workshop {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.title_location-profile_workshop,
+.contact_title-profile_workshop {
+    margin: 5px 0;
+}
+
+.contact_title-profile_workshop {
+    display: flex;
+}
+
+.box_assessment-profile_workshop {
+    width: 100%;
+    height: 0px;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 5vw;
+    margin-bottom: 30px;
+}
+
+.star_assessment-profile_workshop {
+    font-size: 20px;
+}
+
+.services-profile_workshop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.divisor_services-profile_workshop {
+    background-color: black;
+    
+    height: 3px; 
+    width: 95%;
+
+    margin: 0 auto;
+}
+
+.title_services-profile_workshop {
+    font-size: 25px;
+    font-weight: 500;
+
+    margin: 20px 0px;
+}
+
+.content_services-profile_workshop {
+    width: 70%;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: min-content;
+
+    margin-bottom: 20px;
+}
+
+.service-profile_workshop {
+    min-width: 150px;
+    width: 30%;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: default;
+
+    transition-duration: 0.3s;
+}
+
+.service-profile_workshop:hover {
+    font-size: 17px;
+
+    font-weight: 700;
+}
+
+.service-profile_workshop::selection {
+    background-color: var(--cor-terciaria);
+
+    color: var(--cor-primaria);
+}
+
+/* SCHEDULING */
+
+.scheduling-profile_workshop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px 0;
+}
+
+.title_scheduling-profile_workshop {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.field_scheduling-profile_workshop {
+    display: flex;
+    flex-direction: column;
+}
+.fields_scheduling-profile_workshop {
+    display: flex;
+    justify-content: space-evenly;
+
+    margin: 20px 0;
+
+    width: 80%;
+}
+
+.msg_scheduling-profile_workshop {
+    border: 1px solid black;
+
+    resize: vertical;
+
+    padding: 10px;
+
+    width: 61%;
+    min-height: 200px;
+}
+
+.btn_scheduling-profile_workshop {
+    margin-top: 20px;
+
+    width: 30%;
+
+    background-color: var(--cor-primaria);
+
+    transition-duration: 0.3s;
+}
+
+.btn_scheduling-profile_workshop:hover {
+    transform: scale(1.09);
+
+    background-color: var(--cor-terciaria);
+
+    color: #FFF;
+}
+
+.btn_scheduling-profile_workshop:active {
+    transform: scale(1.03);
+
+    background-color: rgb(78, 78, 78);
+}
+

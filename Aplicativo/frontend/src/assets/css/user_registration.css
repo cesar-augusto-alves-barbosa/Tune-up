@@ -1,0 +1,179 @@
+:root {
+    --cor-primaria: #FFC000;
+    --cor-secundaria: #0942B4;
+}
+
+.container_registration {
+    background-image: url('../img/fundo-login.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.box_registration {
+    width: 70vw;
+    height: 80vh;
+
+    background-color: #FFF;
+
+    box-shadow: 0px 0px 999px black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo_registration {
+    width: 25vw;
+}
+
+.title_registration {
+    text-transform: uppercase;
+    font-size: 30px;
+
+    margin: 10px 0;
+}
+.form_registration {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.inputs-form_registration {
+    width: 60%;
+    height: 100%;
+}
+
+.input-form_registration {
+    width: 45%;
+
+    margin: 5px 0;
+}
+.inputs_top_registration {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.inputs_left_registration,
+.inputs_right_registration {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.input_email {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.input_email{
+    width: 95%;
+}
+
+.input-terms_registration {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 35px;
+    width: 25vw;
+}
+
+.passwords {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-terms_registration input {
+    width: 20px;
+
+    margin: 0;
+}
+
+.input-terms_registration label {
+    margin: 0;
+    margin-left: 5px;
+
+    font-size: 15px;
+}
+
+.input_email-form_registration {
+    width: 100%;
+}
+
+.form_registration input:hover,
+.form_registration input:focus {
+    border-color: var(--cor-primaria);
+}
+
+.buttons_register-user_registration {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    margin: 20px 0;
+}
+
+.button_register-user_registration {
+    border: none;
+    border-radius: 8px;
+
+    padding: 7px;
+    width: 40%;
+
+    font-family: 'Poppins', sans-serif;
+
+    transition-duration: 0.5s;
+
+    cursor: pointer;
+}
+.link_button-user_registration {
+    width: 45%;
+}
+
+.btn_registration {
+    background-color: var(--cor-primaria);
+
+    transition-duration: .2s;
+}
+
+.btn_cancel_registration {
+    background-color: var(--cor-secundaria);
+    color: white;
+    transition-duration: .2s;
+}
+
+.buttons_register .btn_registration:hover {
+    background-color: var(--cor-primaria);
+    color: black;
+
+    transform: scale(1.03);
+}
+
+.buttons_register .btn_cancel_registration:hover {
+    background-color: var(--cor-secundaria);
+    color: white;
+
+    transform: scale(1.03);
+}
+
+.buttons_register .btn_registration:active {
+    transform: scale(1.0001);
+}

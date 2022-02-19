@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#F6F6F6"
+    tools:context=".RegisterEngineServiceActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_screen_register_engine_service"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <View
+            android:id="@+id/vw_band_black"
+            android:layout_width="125dp"
+            android:layout_height="182.14dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/band_layout"
+            android:backgroundTint="@color/black" />
+
+        <View
+            android:id="@+id/vw_band_blue"
+            android:layout_width="65dp"
+            android:layout_height="96.14dp"
+            android:background="@drawable/band_layout"
+            android:backgroundTint="@color/blue"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/img_icon_ems"
+            android:layout_width="350dp"
+            android:layout_height="120dp"
+            android:src="@drawable/icon_ems_black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/tv_title_register_engine_services"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_icon_ems"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Serviço de Motor"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:id="@+id/box_register_engine_services"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_below="@+id/tv_title_register_engine_services"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border_box"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="180dp"
+                    android:layout_height="260dp"
+                    android:layout_alignParentStart="true">
+
+                    <CheckBox
+                        android:id="@+id/cb_engineService_engine_oil_change"
+
+                        android:layout_width="180dp"
+                        android:layout_height="37dp"
+
+                        android:text="Troca de Oléo do Motor"
+                        android:textSize="15dp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_engineService_cooling"
+                        android:layout_below="@id/cb_engineService_engine_oil_change"
+
+                        android:layout_width="180dp"
+                        android:layout_height="30dp"
+
+                        android:text="Arrefecimento"
+                        android:textSize="15dp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_engineService_diesel_cycle_engine"
+                        android:layout_below="@id/cb_engineService_cooling"
+
+                        android:layout_width="180dp"
+                        android:layout_height="37dp"
+
+                        android:text="Motores com Ciclo Diesel"
+                        android:textSize="15dp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_engineService_engine_cycle_otto"
+                        android:layout_below="@id/cb_engineService_diesel_cycle_engine"
+
+                        android:layout_width="180dp"
+                        android:layout_height="37dp"
+
+                        android:text="Motores com Ciclo Otto"
+                        android:textSize="15dp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_engineService_review_cooling_system"
+                        android:layout_below="@id/cb_engineService_engine_cycle_otto"
+
+                        android:layout_width="180dp"
+                        android:layout_height="37dp"
+
+                        android:layout_marginTop="10dp"
+
+                        android:text="Revisão no Sistema de Arrefecimento"
+                        android:textSize="15dp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_engineService_engine_governors"
+                        android:layout_below="@id/cb_engineService_review_cooling_system"
+
+                        android:layout_width="170dp"
+                        android:layout_height="37dp"
+
+                        android:layout_marginTop="10dp"
+
+                        android:text="Reguladores de Motor"
+                        android:textSize="15dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="260dp"
+                    android:layout_alignParentEnd="true">
+
+                    <CheckBox
+                        android:id="@+id/cb_engineService_engine_overhaul"
+
+                        android:layout_width="180dp"
+                        android:layout_height="37dp"
+
+                        android:text="Retífica de Motores"
+                        android:textSize="15dp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_engineService_change_filters"
+                        android:layout_below="@id/cb_engineService_engine_overhaul"
+
+                        android:layout_width="180dp"
+                        android:layout_height="30dp"
+
+                        android:text="Troca de Filtros"
+                        android:textSize="15dp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_engineService_radiators"
+                        android:layout_below="@id/cb_engineService_change_filters"
+
+                        android:layout_width="180dp"
+                        android:layout_height="30dp"
+
+                        android:text="Radiadores"
+                        android:textSize="15dp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_engineService_electronic_injection"
+                        android:layout_below="@id/cb_engineService_radiators"
+
+                        android:layout_width="180dp"
+                        android:layout_height="30dp"
+
+                        android:layout_marginTop="10dp"
+
+                        android:text="Injeção Eletrônica"
+                        android:textSize="15dp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_engineService_electronic_injection_ignition"
+                        android:layout_below="@id/cb_engineService_electronic_injection"
+
+                        android:layout_width="180dp"
+                        android:layout_height="37dp"
+
+                        android:layout_marginTop="10dp"
+
+                        android:text="Injeção e Ignição Eletrônica"
+                        android:textSize="15dp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_engineService_electronic_diesel_injection"
+                        android:layout_below="@id/cb_engineService_electronic_injection_ignition"
+
+                        android:layout_width="180dp"
+                        android:layout_height="37dp"
+
+                        android:layout_marginTop="10dp"
+
+
+                        android:text="injeção eletronica diesel"
+                        android:textSize="15dp" />
+
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true">
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginHorizontal="3dp"
+                        android:background="@drawable/circle_activity_register_screens"
+                        android:backgroundTint="@color/black" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginHorizontal="3dp"
+                        android:background="@drawable/circle_activity_register_screens"
+                        android:backgroundTint="@color/black" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginHorizontal="3dp"
+                        android:background="@drawable/circle_activity_register_screens"
+                        android:backgroundTint="@color/black" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginHorizontal="3dp"
+                        android:background="@drawable/circle_activity_register_screens"
+                        android:backgroundTint="@color/black" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginHorizontal="3dp"
+                        android:background="@drawable/circle_activity_register_screens"
+                        android:backgroundTint="@color/black" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginHorizontal="3dp"
+                        android:background="@drawable/circle_activity_register_screens"
+                        android:backgroundTint="@color/blue" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginHorizontal="3dp"
+                        android:background="@drawable/circle_activity_register_screens"
+                        android:backgroundTint="@color/black" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginHorizontal="3dp"
+                        android:background="@drawable/circle_activity_register_screens"
+                        android:backgroundTint="@color/black" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginHorizontal="3dp"
+                        android:background="@drawable/circle_activity_register_screens"
+                        android:backgroundTint="@color/black" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/box_register_engine_services">
+
+            <Button
+                android:id="@+id/bt_back_register_info_engine"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="@font/poppins_medium"
+                android:backgroundTint="@color/black"
+                android:text="@string/txt_back_button"
+                android:onClick="redirectToRegisterBrakeService"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"/>
+
+            <Button
+                android:id="@+id/bt_next_register_info_engine"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="@color/blue"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/txt_next_button"
+                android:onClick="redirectToRegisterBeautyPreparation"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
