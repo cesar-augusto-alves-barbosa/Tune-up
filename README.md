@@ -17,7 +17,7 @@
 Com isso, um e-mail vai ser mandado para o proprietário dessa oficina para poder ser confirmado, e dependendo da resposta que o proprietário, será enviado um outro e-mail para o cliente confirmando ou pedindo para que ele escolha outras datas e horários. </p>
 
 # Nosso software é a EMS
-<img src="https://github.com/BandTec/pi-3adsb-2021-1-grupo-8/blob/main/Logos/EMS-Sem-Fundo-Branco.png?raw=true" alt="logo ems">
+![](/Logos/EMS-Sem-Fundo-Black.png)
 
 <p> Software de gerenciamento para oficinas mecânicas. </p>
 
